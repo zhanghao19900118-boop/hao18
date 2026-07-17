@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="2026 世界杯赛程与球队数据分析演示" />
+  <title>World Cup Lab · 2026 世界杯数据中心</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#/world-cup" aria-label="返回首页">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span>WORLD CUP <b>LAB</b></span>
+      </a>
+      <nav><a class="active" href="#/world-cup">赛程中心</a><a href="#/world-cup?view=teams">球队</a><a href="#/world-cup?view=data">数据说明</a></nav>
+      <div class="header-tools"><span class="live-dot"></span><span>演示数据</span><button class="icon-button" id="themeButton" aria-label="切换主题">◐</button></div>
+    </header>
+    <main id="app"></main>
+    <footer><span>WORLD CUP LAB / 2026</span><span>数据为产品演示用途 · 最后更新 2026-07-17 09:30 EDT</span></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
