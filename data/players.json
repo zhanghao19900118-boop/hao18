@@ -1,0 +1,6 @@
+[
+  {"player_id":"arg-10","name":"Lionel Messi","team":"Argentina","position":"前锋","number":10,"photo_url":"https://media.api-sports.io/football/players/154.png","source_url":"https://www.api-football.com/","last_verified_at":"2026-07-19"},
+  {"player_id":"arg-9","name":"Julián Álvarez","team":"Argentina","position":"前锋","number":9,"photo_url":"","source_url":"","last_verified_at":"2026-07-19"},
+  {"player_id":"esp-16","name":"Rodri","team":"Spain","position":"中场","number":16,"photo_url":"","source_url":"","last_verified_at":"2026-07-19"},
+  {"player_id":"esp-20","name":"Pedri","team":"Spain","position":"中场","number":20,"photo_url":"","source_url":"","last_verified_at":"2026-07-19"}
+]
