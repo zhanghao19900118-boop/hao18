@@ -6,11 +6,11 @@
     "time": "13:00",
     "home": "Mexico",
     "away": "South Africa",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–0",
+    "status": "已结束",
     "venue": "Mexico City Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-2",
@@ -19,11 +19,11 @@
     "time": "20:00",
     "home": "South Korea",
     "away": "Czech Republic",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–1",
+    "status": "已结束",
     "venue": "Estadio Guadalajara",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-3",
@@ -32,11 +32,11 @@
     "time": "15:00",
     "home": "Canada",
     "away": "Bosnia and Herzegovina",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "Toronto Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-4",
@@ -45,11 +45,11 @@
     "time": "18:00",
     "home": "United States",
     "away": "Paraguay",
-    "score": "—",
-    "status": "未开始",
+    "score": "4–1",
+    "status": "已结束",
     "venue": "Los Angeles Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-5",
@@ -58,11 +58,11 @@
     "time": "21:00",
     "home": "Haiti",
     "away": "Scotland",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–1",
+    "status": "已结束",
     "venue": "Boston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-6",
@@ -71,11 +71,11 @@
     "time": "21:00",
     "home": "Australia",
     "away": "Turkey",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–0",
+    "status": "已结束",
     "venue": "BC Place Vancouver",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-7",
@@ -84,11 +84,11 @@
     "time": "18:00",
     "home": "Brazil",
     "away": "Morocco",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "New York/New Jersey Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-8",
@@ -97,11 +97,11 @@
     "time": "12:00",
     "home": "Qatar",
     "away": "Switzerland",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "San Francisco Bay Area Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-9",
@@ -110,11 +110,11 @@
     "time": "19:00",
     "home": "Ivory Coast",
     "away": "Ecuador",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–0",
+    "status": "已结束",
     "venue": "Philadelphia Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-10",
@@ -123,11 +123,11 @@
     "time": "12:00",
     "home": "Germany",
     "away": "Curaçao",
-    "score": "—",
-    "status": "未开始",
+    "score": "7–1",
+    "status": "已结束",
     "venue": "Houston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-11",
@@ -136,11 +136,11 @@
     "time": "15:00",
     "home": "Netherlands",
     "away": "Japan",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–2",
+    "status": "已结束",
     "venue": "Dallas Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-12",
@@ -149,11 +149,11 @@
     "time": "20:00",
     "home": "Sweden",
     "away": "Tunisia",
-    "score": "—",
-    "status": "未开始",
+    "score": "5–1",
+    "status": "已结束",
     "venue": "Estadio Monterrey",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-13",
@@ -162,11 +162,11 @@
     "time": "18:00",
     "home": "Iran",
     "away": "New Zealand",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–2",
+    "status": "已结束",
     "venue": "Los Angeles Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-14",
@@ -175,11 +175,11 @@
     "time": "12:00",
     "home": "Spain",
     "away": "Cape Verde",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–0",
+    "status": "已结束",
     "venue": "Atlanta Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-15",
@@ -188,11 +188,11 @@
     "time": "12:00",
     "home": "Belgium",
     "away": "Egypt",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "Seattle Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-16",
@@ -201,11 +201,11 @@
     "time": "18:00",
     "home": "Saudi Arabia",
     "away": "Uruguay",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "Miami Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-17",
@@ -214,11 +214,11 @@
     "time": "15:00",
     "home": "France",
     "away": "Senegal",
-    "score": "—",
-    "status": "未开始",
+    "score": "3–1",
+    "status": "已结束",
     "venue": "New York/New Jersey Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-18",
@@ -227,11 +227,11 @@
     "time": "18:00",
     "home": "Iraq",
     "away": "Norway",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–4",
+    "status": "已结束",
     "venue": "Boston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-19",
@@ -240,11 +240,11 @@
     "time": "20:00",
     "home": "Argentina",
     "away": "Algeria",
-    "score": "—",
-    "status": "未开始",
+    "score": "3–0",
+    "status": "已结束",
     "venue": "Kansas City Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-20",
@@ -253,11 +253,11 @@
     "time": "21:00",
     "home": "Austria",
     "away": "Jordan",
-    "score": "—",
-    "status": "未开始",
+    "score": "3–1",
+    "status": "已结束",
     "venue": "San Francisco Bay Area Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-21",
@@ -266,11 +266,11 @@
     "time": "12:00",
     "home": "Portugal",
     "away": "Democratic Republic of the Congo",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "Houston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-22",
@@ -279,11 +279,11 @@
     "time": "15:00",
     "home": "England",
     "away": "Croatia",
-    "score": "—",
-    "status": "未开始",
+    "score": "4–2",
+    "status": "已结束",
     "venue": "Dallas Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-23",
@@ -292,11 +292,11 @@
     "time": "20:00",
     "home": "Uzbekistan",
     "away": "Colombia",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–3",
+    "status": "已结束",
     "venue": "Mexico City Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-24",
@@ -305,11 +305,11 @@
     "time": "19:00",
     "home": "Ghana",
     "away": "Panama",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–0",
+    "status": "已结束",
     "venue": "Toronto Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-25",
@@ -318,11 +318,11 @@
     "time": "19:00",
     "home": "Mexico",
     "away": "South Korea",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–0",
+    "status": "已结束",
     "venue": "Estadio Guadalajara",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-26",
@@ -331,11 +331,11 @@
     "time": "12:00",
     "home": "Switzerland",
     "away": "Bosnia and Herzegovina",
-    "score": "—",
-    "status": "未开始",
+    "score": "4–1",
+    "status": "已结束",
     "venue": "Los Angeles Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-27",
@@ -344,11 +344,11 @@
     "time": "15:00",
     "home": "Canada",
     "away": "Qatar",
-    "score": "—",
-    "status": "未开始",
+    "score": "6–0",
+    "status": "已结束",
     "venue": "BC Place Vancouver",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-28",
@@ -357,11 +357,11 @@
     "time": "12:00",
     "home": "Czech Republic",
     "away": "South Africa",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "Atlanta Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-29",
@@ -370,11 +370,11 @@
     "time": "21:00",
     "home": "Brazil",
     "away": "Haiti",
-    "score": "—",
-    "status": "未开始",
+    "score": "3–0",
+    "status": "已结束",
     "venue": "Philadelphia Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-30",
@@ -383,11 +383,11 @@
     "time": "18:00",
     "home": "Scotland",
     "away": "Morocco",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–1",
+    "status": "已结束",
     "venue": "Boston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-31",
@@ -396,11 +396,11 @@
     "time": "12:00",
     "home": "United States",
     "away": "Australia",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–0",
+    "status": "已结束",
     "venue": "Seattle Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-32",
@@ -409,11 +409,11 @@
     "time": "20:00",
     "home": "Turkey",
     "away": "Paraguay",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–1",
+    "status": "已结束",
     "venue": "San Francisco Bay Area Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-33",
@@ -422,11 +422,11 @@
     "time": "16:00",
     "home": "Germany",
     "away": "Ivory Coast",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–1",
+    "status": "已结束",
     "venue": "Toronto Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-34",
@@ -435,11 +435,11 @@
     "time": "19:00",
     "home": "Ecuador",
     "away": "Curaçao",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–0",
+    "status": "已结束",
     "venue": "Kansas City Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-35",
@@ -448,11 +448,11 @@
     "time": "12:00",
     "home": "Netherlands",
     "away": "Sweden",
-    "score": "—",
-    "status": "未开始",
+    "score": "5–1",
+    "status": "已结束",
     "venue": "Houston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-36",
@@ -461,11 +461,11 @@
     "time": "22:00",
     "home": "Tunisia",
     "away": "Japan",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–4",
+    "status": "已结束",
     "venue": "Estadio Monterrey",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-37",
@@ -474,11 +474,11 @@
     "time": "12:00",
     "home": "Belgium",
     "away": "Iran",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–0",
+    "status": "已结束",
     "venue": "Los Angeles Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-38",
@@ -487,11 +487,11 @@
     "time": "18:00",
     "home": "New Zealand",
     "away": "Egypt",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–3",
+    "status": "已结束",
     "venue": "BC Place Vancouver",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-39",
@@ -500,11 +500,11 @@
     "time": "12:00",
     "home": "Spain",
     "away": "Saudi Arabia",
-    "score": "—",
-    "status": "未开始",
+    "score": "4–0",
+    "status": "已结束",
     "venue": "Atlanta Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-40",
@@ -513,11 +513,11 @@
     "time": "18:00",
     "home": "Uruguay",
     "away": "Cape Verde",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–2",
+    "status": "已结束",
     "venue": "Miami Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-41",
@@ -526,11 +526,11 @@
     "time": "17:00",
     "home": "France",
     "away": "Iraq",
-    "score": "—",
-    "status": "未开始",
+    "score": "3–0",
+    "status": "已结束",
     "venue": "Philadelphia Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-42",
@@ -539,11 +539,11 @@
     "time": "20:00",
     "home": "Norway",
     "away": "Senegal",
-    "score": "—",
-    "status": "未开始",
+    "score": "3–2",
+    "status": "已结束",
     "venue": "New York/New Jersey Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-43",
@@ -552,11 +552,11 @@
     "time": "12:00",
     "home": "Argentina",
     "away": "Austria",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–0",
+    "status": "已结束",
     "venue": "Dallas Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-44",
@@ -565,11 +565,11 @@
     "time": "20:00",
     "home": "Jordan",
     "away": "Algeria",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–2",
+    "status": "已结束",
     "venue": "San Francisco Bay Area Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-45",
@@ -578,11 +578,11 @@
     "time": "12:00",
     "home": "Portugal",
     "away": "Uzbekistan",
-    "score": "—",
-    "status": "未开始",
+    "score": "5–0",
+    "status": "已结束",
     "venue": "Houston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-46",
@@ -591,11 +591,11 @@
     "time": "19:00",
     "home": "Panama",
     "away": "Croatia",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–1",
+    "status": "已结束",
     "venue": "Toronto Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-47",
@@ -604,11 +604,11 @@
     "time": "20:00",
     "home": "Colombia",
     "away": "Democratic Republic of the Congo",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–0",
+    "status": "已结束",
     "venue": "Estadio Guadalajara",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-48",
@@ -617,11 +617,11 @@
     "time": "16:00",
     "home": "England",
     "away": "Ghana",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–0",
+    "status": "已结束",
     "venue": "Boston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-49",
@@ -630,11 +630,11 @@
     "time": "18:00",
     "home": "Scotland",
     "away": "Brazil",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–3",
+    "status": "已结束",
     "venue": "Miami Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-50",
@@ -643,11 +643,11 @@
     "time": "18:00",
     "home": "Morocco",
     "away": "Haiti",
-    "score": "—",
-    "status": "未开始",
+    "score": "4–2",
+    "status": "已结束",
     "venue": "Atlanta Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-51",
@@ -656,11 +656,11 @@
     "time": "19:00",
     "home": "South Africa",
     "away": "South Korea",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–0",
+    "status": "已结束",
     "venue": "Estadio Monterrey",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-52",
@@ -669,11 +669,11 @@
     "time": "19:00",
     "home": "Czech Republic",
     "away": "Mexico",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–3",
+    "status": "已结束",
     "venue": "Mexico City Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-53",
@@ -682,11 +682,11 @@
     "time": "12:00",
     "home": "Bosnia and Herzegovina",
     "away": "Qatar",
-    "score": "—",
-    "status": "未开始",
+    "score": "3–1",
+    "status": "已结束",
     "venue": "Seattle Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-54",
@@ -695,11 +695,11 @@
     "time": "12:00",
     "home": "Switzerland",
     "away": "Canada",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–1",
+    "status": "已结束",
     "venue": "BC Place Vancouver",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-55",
@@ -708,11 +708,11 @@
     "time": "16:00",
     "home": "Curaçao",
     "away": "Ivory Coast",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–2",
+    "status": "已结束",
     "venue": "Philadelphia Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-56",
@@ -721,11 +721,11 @@
     "time": "16:00",
     "home": "Ecuador",
     "away": "Germany",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–1",
+    "status": "已结束",
     "venue": "New York/New Jersey Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-57",
@@ -734,11 +734,11 @@
     "time": "19:00",
     "home": "Paraguay",
     "away": "Australia",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–0",
+    "status": "已结束",
     "venue": "San Francisco Bay Area Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-58",
@@ -747,11 +747,11 @@
     "time": "19:00",
     "home": "Turkey",
     "away": "United States",
-    "score": "—",
-    "status": "未开始",
+    "score": "3–2",
+    "status": "已结束",
     "venue": "Los Angeles Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-59",
@@ -760,11 +760,11 @@
     "time": "18:00",
     "home": "Japan",
     "away": "Sweden",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "Dallas Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-60",
@@ -773,11 +773,11 @@
     "time": "18:00",
     "home": "Tunisia",
     "away": "Netherlands",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–3",
+    "status": "已结束",
     "venue": "Kansas City Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-61",
@@ -786,11 +786,11 @@
     "time": "15:00",
     "home": "Senegal",
     "away": "Iraq",
-    "score": "—",
-    "status": "未开始",
+    "score": "5–0",
+    "status": "已结束",
     "venue": "Toronto Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-62",
@@ -799,11 +799,11 @@
     "time": "15:00",
     "home": "Norway",
     "away": "France",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–4",
+    "status": "已结束",
     "venue": "Boston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-63",
@@ -812,11 +812,11 @@
     "time": "20:00",
     "home": "Egypt",
     "away": "Iran",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "Seattle Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-64",
@@ -825,11 +825,11 @@
     "time": "20:00",
     "home": "New Zealand",
     "away": "Belgium",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–5",
+    "status": "已结束",
     "venue": "BC Place Vancouver",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-65",
@@ -838,11 +838,11 @@
     "time": "19:00",
     "home": "Cape Verde",
     "away": "Saudi Arabia",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–0",
+    "status": "已结束",
     "venue": "Houston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-66",
@@ -851,11 +851,11 @@
     "time": "18:00",
     "home": "Uruguay",
     "away": "Spain",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–1",
+    "status": "已结束",
     "venue": "Estadio Guadalajara",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-67",
@@ -864,11 +864,11 @@
     "time": "17:00",
     "home": "Panama",
     "away": "England",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–2",
+    "status": "已结束",
     "venue": "New York/New Jersey Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-68",
@@ -877,11 +877,11 @@
     "time": "17:00",
     "home": "Croatia",
     "away": "Ghana",
-    "score": "—",
-    "status": "未开始",
+    "score": "2–1",
+    "status": "已结束",
     "venue": "Philadelphia Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-69",
@@ -890,11 +890,11 @@
     "time": "21:00",
     "home": "Algeria",
     "away": "Austria",
-    "score": "—",
-    "status": "未开始",
+    "score": "3–3",
+    "status": "已结束",
     "venue": "Kansas City Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-70",
@@ -903,11 +903,11 @@
     "time": "21:00",
     "home": "Jordan",
     "away": "Argentina",
-    "score": "—",
-    "status": "未开始",
+    "score": "1–3",
+    "status": "已结束",
     "venue": "Dallas Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-71",
@@ -916,11 +916,11 @@
     "time": "19:30",
     "home": "Colombia",
     "away": "Portugal",
-    "score": "—",
-    "status": "未开始",
+    "score": "0–0",
+    "status": "已结束",
     "venue": "Miami Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-72",
@@ -929,426 +929,426 @@
     "time": "19:30",
     "home": "Democratic Republic of the Congo",
     "away": "Uzbekistan",
-    "score": "—",
-    "status": "未开始",
+    "score": "3–1",
+    "status": "已结束",
     "venue": "Atlanta Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-73",
     "group": "R32",
     "date": "2026-06-28",
     "time": "12:00",
-    "home": "Runner-up Group A",
-    "away": "Runner-up Group B",
-    "score": "—",
-    "status": "未开始",
+    "home": "South Africa",
+    "away": "Canada",
+    "score": "0–1",
+    "status": "已结束",
     "venue": "Los Angeles Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-74",
     "group": "R32",
     "date": "2026-06-29",
     "time": "16:30",
-    "home": "Winner Group E",
-    "away": "3rd Group A/B/C/D/F",
-    "score": "—",
-    "status": "未开始",
+    "home": "Germany",
+    "away": "Paraguay",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "Boston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-75",
     "group": "R32",
     "date": "2026-06-29",
     "time": "19:00",
-    "home": "Winner Group F",
-    "away": "Runner-up Group C",
-    "score": "—",
-    "status": "未开始",
+    "home": "Netherlands",
+    "away": "Morocco",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "Estadio Monterrey",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-76",
     "group": "R32",
     "date": "2026-06-29",
     "time": "12:00",
-    "home": "Winner Group C",
-    "away": "Runner-up Group F",
-    "score": "—",
-    "status": "未开始",
+    "home": "Brazil",
+    "away": "Japan",
+    "score": "2–1",
+    "status": "已结束",
     "venue": "Houston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-77",
     "group": "R32",
     "date": "2026-06-30",
     "time": "17:00",
-    "home": "Winner Group I",
-    "away": "3rd Group C/D/F/G/H",
-    "score": "—",
-    "status": "未开始",
+    "home": "France",
+    "away": "Sweden",
+    "score": "3–0",
+    "status": "已结束",
     "venue": "New York/New Jersey Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-78",
     "group": "R32",
     "date": "2026-06-30",
     "time": "12:00",
-    "home": "Runner-up Group E",
-    "away": "Runner-up Group I",
-    "score": "—",
-    "status": "未开始",
+    "home": "Ivory Coast",
+    "away": "Norway",
+    "score": "1–2",
+    "status": "已结束",
     "venue": "Dallas Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-79",
     "group": "R32",
     "date": "2026-06-30",
     "time": "19:00",
-    "home": "Winner Group A",
-    "away": "3rd Group C/E/F/H/I",
-    "score": "—",
-    "status": "未开始",
+    "home": "Mexico",
+    "away": "Ecuador",
+    "score": "2–0",
+    "status": "已结束",
     "venue": "Mexico City Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-80",
     "group": "R32",
     "date": "2026-07-01",
     "time": "12:00",
-    "home": "Winner Group L",
-    "away": "3rd Group E/H/I/J/K",
-    "score": "—",
-    "status": "未开始",
+    "home": "England",
+    "away": "Democratic Republic of the Congo",
+    "score": "2–1",
+    "status": "已结束",
     "venue": "Atlanta Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-81",
     "group": "R32",
     "date": "2026-07-01",
     "time": "17:00",
-    "home": "Winner Group D",
-    "away": "3rd Group B/E/F/I/J",
-    "score": "—",
-    "status": "未开始",
+    "home": "United States",
+    "away": "Bosnia and Herzegovina",
+    "score": "2–0",
+    "status": "已结束",
     "venue": "San Francisco Bay Area Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-82",
     "group": "R32",
     "date": "2026-07-01",
     "time": "13:00",
-    "home": "Winner Group G",
-    "away": "3rd Group A/E/H/I/J",
-    "score": "—",
-    "status": "未开始",
+    "home": "Belgium",
+    "away": "Senegal",
+    "score": "3–2",
+    "status": "已结束",
     "venue": "Seattle Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-83",
     "group": "R32",
     "date": "2026-07-02",
     "time": "19:00",
-    "home": "Runner-up Group K",
-    "away": "Runner-up Group L",
-    "score": "—",
-    "status": "未开始",
+    "home": "Portugal",
+    "away": "Croatia",
+    "score": "2–1",
+    "status": "已结束",
     "venue": "Toronto Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-84",
     "group": "R32",
     "date": "2026-07-02",
     "time": "12:00",
-    "home": "Winner Group H",
-    "away": "Runner-up Group J",
-    "score": "—",
-    "status": "未开始",
+    "home": "Spain",
+    "away": "Austria",
+    "score": "3–0",
+    "status": "已结束",
     "venue": "Los Angeles Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-85",
     "group": "R32",
     "date": "2026-07-02",
     "time": "20:00",
-    "home": "Winner Group B",
-    "away": "3rd Group E/F/G/I/J",
-    "score": "—",
-    "status": "未开始",
+    "home": "Switzerland",
+    "away": "Algeria",
+    "score": "2–0",
+    "status": "已结束",
     "venue": "BC Place Vancouver",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-86",
     "group": "R32",
     "date": "2026-07-03",
     "time": "18:00",
-    "home": "Winner Group J",
-    "away": "Runner-up Group H",
-    "score": "—",
-    "status": "未开始",
+    "home": "Argentina",
+    "away": "Cape Verde",
+    "score": "3–2",
+    "status": "已结束",
     "venue": "Miami Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-87",
     "group": "R32",
     "date": "2026-07-03",
     "time": "20:30",
-    "home": "Winner Group K",
-    "away": "3rd Group D/E/I/J/L",
-    "score": "—",
-    "status": "未开始",
+    "home": "Colombia",
+    "away": "Ghana",
+    "score": "1–0",
+    "status": "已结束",
     "venue": "Kansas City Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-88",
     "group": "R32",
     "date": "2026-07-03",
     "time": "13:00",
-    "home": "Runner-up Group D",
-    "away": "Runner-up Group G",
-    "score": "—",
-    "status": "未开始",
+    "home": "Australia",
+    "away": "Egypt",
+    "score": "1–1",
+    "status": "已结束",
     "venue": "Dallas Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-89",
     "group": "R16",
     "date": "2026-07-04",
     "time": "17:00",
-    "home": "Winner Match 74",
-    "away": "Winner Match 77",
-    "score": "—",
-    "status": "未开始",
+    "home": "Paraguay",
+    "away": "France",
+    "score": "0–1",
+    "status": "已结束",
     "venue": "Philadelphia Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-90",
     "group": "R16",
     "date": "2026-07-04",
     "time": "12:00",
-    "home": "Winner Match 73",
-    "away": "Winner Match 75",
-    "score": "—",
-    "status": "未开始",
+    "home": "Canada",
+    "away": "Morocco",
+    "score": "0–3",
+    "status": "已结束",
     "venue": "Houston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-91",
     "group": "R16",
     "date": "2026-07-05",
     "time": "16:00",
-    "home": "Winner Match 76",
-    "away": "Winner Match 78",
-    "score": "—",
-    "status": "未开始",
+    "home": "Brazil",
+    "away": "Norway",
+    "score": "1–2",
+    "status": "已结束",
     "venue": "New York/New Jersey Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-92",
     "group": "R16",
     "date": "2026-07-05",
     "time": "18:00",
-    "home": "Winner Match 79",
-    "away": "Winner Match 80",
-    "score": "—",
-    "status": "未开始",
+    "home": "Mexico",
+    "away": "England",
+    "score": "2–3",
+    "status": "已结束",
     "venue": "Mexico City Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-93",
     "group": "R16",
     "date": "2026-07-06",
     "time": "14:00",
-    "home": "Winner Match 83",
-    "away": "Winner Match 84",
-    "score": "—",
-    "status": "未开始",
+    "home": "Portugal",
+    "away": "Spain",
+    "score": "0–1",
+    "status": "已结束",
     "venue": "Dallas Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-94",
     "group": "R16",
     "date": "2026-07-06",
     "time": "17:00",
-    "home": "Winner Match 81",
-    "away": "Winner Match 82",
-    "score": "—",
-    "status": "未开始",
+    "home": "United States",
+    "away": "Belgium",
+    "score": "1–4",
+    "status": "已结束",
     "venue": "Seattle Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-95",
     "group": "R16",
     "date": "2026-07-07",
     "time": "12:00",
-    "home": "Winner Match 86",
-    "away": "Winner Match 88",
-    "score": "—",
-    "status": "未开始",
+    "home": "Argentina",
+    "away": "Egypt",
+    "score": "3–2",
+    "status": "已结束",
     "venue": "Atlanta Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-96",
     "group": "R16",
     "date": "2026-07-07",
     "time": "13:00",
-    "home": "Winner Match 85",
-    "away": "Winner Match 87",
-    "score": "—",
-    "status": "未开始",
+    "home": "Switzerland",
+    "away": "Colombia",
+    "score": "0–0",
+    "status": "已结束",
     "venue": "BC Place Vancouver",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-97",
     "group": "QF",
     "date": "2026-07-09",
     "time": "16:00",
-    "home": "Winner Match 89",
-    "away": "Winner Match 90",
-    "score": "—",
-    "status": "未开始",
+    "home": "France",
+    "away": "Morocco",
+    "score": "2–0",
+    "status": "已结束",
     "venue": "Boston Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-98",
     "group": "QF",
     "date": "2026-07-10",
     "time": "12:00",
-    "home": "Winner Match 93",
-    "away": "Winner Match 94",
-    "score": "—",
-    "status": "未开始",
+    "home": "Spain",
+    "away": "Belgium",
+    "score": "2–1",
+    "status": "已结束",
     "venue": "Los Angeles Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-99",
     "group": "QF",
     "date": "2026-07-11",
     "time": "17:00",
-    "home": "Winner Match 91",
-    "away": "Winner Match 92",
-    "score": "—",
-    "status": "未开始",
+    "home": "Norway",
+    "away": "England",
+    "score": "1–2",
+    "status": "已结束",
     "venue": "Miami Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-100",
     "group": "QF",
     "date": "2026-07-11",
     "time": "20:00",
-    "home": "阿根廷",
-    "away": "瑞士",
+    "home": "Argentina",
+    "away": "Switzerland",
     "score": "3–1",
     "status": "已结束",
     "venue": "Kansas City Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-101",
     "group": "SF",
     "date": "2026-07-14",
     "time": "14:00",
-    "home": "西班牙",
-    "away": "法国",
-    "score": "2–0",
+    "home": "France",
+    "away": "Spain",
+    "score": "0–2",
     "status": "已结束",
     "venue": "Dallas Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-102",
     "group": "SF",
     "date": "2026-07-15",
     "time": "15:00",
-    "home": "阿根廷",
-    "away": "英格兰",
-    "score": "2–1",
+    "home": "England",
+    "away": "Argentina",
+    "score": "1–2",
     "status": "已结束",
     "venue": "Atlanta Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-103",
     "group": "3RD",
     "date": "2026-07-18",
     "time": "17:00",
-    "home": "Loser Match 101",
-    "away": "Loser Match 102",
+    "home": "France",
+    "away": "England",
     "score": "—",
     "status": "未开始",
     "venue": "Miami Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   },
   {
     "id": "wc26-104",
     "group": "FINAL",
     "date": "2026-07-19",
     "time": "15:00",
-    "home": "Winner Match 101",
-    "away": "Winner Match 102",
+    "home": "Spain",
+    "away": "Argentina",
     "score": "—",
     "status": "未开始",
     "venue": "New York/New Jersey Stadium",
-    "source": "公开 World Cup 2026 数据集 + 交叉核对报道",
-    "last_updated": "2026-07-17"
+    "source": "worldcup26.ir public World Cup 2026 API",
+    "last_updated": "2026-07-18"
   }
 ]
