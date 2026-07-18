@@ -11,6 +11,7 @@
     "prediction": "关注 Canada 对阵 Bosnia and Herzegovina 的比赛结果",
     "supported_team": "Canada",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
     "total_points": 980,
@@ -28,6 +29,7 @@
     "prediction": "关注 United States 对阵 Paraguay 的比赛结果",
     "supported_team": "United States",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
     "points_change": 42,
     "total_points": 1022,
@@ -43,6 +45,7 @@
     "prediction": "关注 United States 对阵 Canada 的比赛结果",
     "supported_team": "United States",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
     "total_points": 1012,
@@ -58,6 +61,7 @@
     "prediction": "关注 Qatar 对阵 Switzerland 的比赛结果",
     "supported_team": "Qatar",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
     "total_points": 992,
@@ -75,6 +79,7 @@
     "prediction": "关注 Brazil 对阵 Morocco 的比赛结果",
     "supported_team": "Brazil",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
     "total_points": 972,
@@ -92,6 +97,7 @@
     "prediction": "关注 Haiti 对阵 Scotland 的比赛结果",
     "supported_team": "Haiti",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
     "total_points": 952,
@@ -109,6 +115,7 @@
     "prediction": "关注 Australia 对阵 Turkey 的比赛结果",
     "supported_team": "Australia",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
     "total_points": 932,
@@ -124,6 +131,7 @@
     "prediction": "关注 Qatar 对阵 Haiti 的比赛结果",
     "supported_team": "Qatar",
     "weight": 40,
+    "confidence_percent": 80,
     "result": "incorrect",
     "points_change": -40,
     "total_points": 892,
@@ -141,6 +149,7 @@
     "prediction": "关注 Germany 对阵 Curaçao 的比赛结果",
     "supported_team": "Germany",
     "weight": 40,
+    "confidence_percent": 80,
     "result": "correct",
     "points_change": 14,
     "total_points": 906,
@@ -158,6 +167,7 @@
     "prediction": "支持 Netherlands",
     "supported_team": "Netherlands",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
     "total_points": 886,
@@ -175,6 +185,7 @@
     "prediction": "关注 Ivory Coast 对阵 Ecuador 的比赛结果",
     "supported_team": "Ivory Coast",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
     "points_change": 24,
     "total_points": 910,
@@ -192,6 +203,7 @@
     "prediction": "关注 Sweden 对阵 Tunisia 的比赛结果",
     "supported_team": "Sweden",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
     "total_points": 900,
@@ -209,6 +221,7 @@
     "prediction": "关注 Spain 对阵 Cape Verde 的比赛结果",
     "supported_team": "Spain",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
     "total_points": 880,
@@ -224,6 +237,7 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
     "total_points": 860,
@@ -241,6 +255,7 @@
     "prediction": "支持 Belgium",
     "supported_team": "Belgium",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
     "total_points": 840,
@@ -256,6 +271,7 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
     "points_change": 25,
     "total_points": 865,
@@ -273,6 +289,7 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
     "total_points": 855,
@@ -290,6 +307,7 @@
     "prediction": "关注 France 对阵 Senegal 的比赛结果",
     "supported_team": "France",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
     "total_points": 835,
@@ -307,9 +325,10 @@
     "prediction": "支持 Norway",
     "supported_team": "Norway",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
-    "points_change": 4.4444,
-    "total_points": 839.4444,
+    "points_change": 4,
+    "total_points": 839,
     "watched": true
   },
   {
@@ -322,9 +341,10 @@
     "prediction": "关注 Germany 对阵 Argentina 的比赛结果",
     "supported_team": "Germany",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 819.4444,
+    "total_points": 819,
     "watched": true
   },
   {
@@ -337,9 +357,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 799.4444,
+    "total_points": 799,
     "watched": true
   },
   {
@@ -354,9 +375,10 @@
     "prediction": "关注 England 对阵 Croatia 的比赛结果",
     "supported_team": "England",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 789.4444,
+    "total_points": 789,
     "watched": true
   },
   {
@@ -369,9 +391,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 779.4444,
+    "total_points": 779,
     "watched": true
   },
   {
@@ -384,9 +407,10 @@
     "prediction": "关注 Portugal 对阵 Colombia 的比赛结果",
     "supported_team": "Portugal",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "incorrect",
     "points_change": -30,
-    "total_points": 749.4444,
+    "total_points": 749,
     "watched": true
   },
   {
@@ -401,9 +425,10 @@
     "prediction": "支持 Ghana",
     "supported_team": "Ghana",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
-    "points_change": 27.2,
-    "total_points": 776.6444,
+    "points_change": 27,
+    "total_points": 776,
     "watched": true
   },
   {
@@ -416,9 +441,10 @@
     "prediction": "关注 Canada 对阵 South Africa 的比赛结果",
     "supported_team": "Canada",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 756.6444,
+    "total_points": 756,
     "watched": true
   },
   {
@@ -433,9 +459,10 @@
     "prediction": "关注 Bosnia and Herzegovina 对阵 Switzerland 的比赛结果",
     "supported_team": "Bosnia and Herzegovina",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 736.6444,
+    "total_points": 736,
     "watched": true
   },
   {
@@ -450,9 +477,10 @@
     "prediction": "关注 Mexico 对阵 South Korea 的比赛结果",
     "supported_team": "Mexico",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 716.6444,
+    "total_points": 716,
     "watched": true
   },
   {
@@ -467,9 +495,10 @@
     "prediction": "关注 United States 对阵 Australia 的比赛结果",
     "supported_team": "United States",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 706.6444,
+    "total_points": 706,
     "watched": true
   },
   {
@@ -484,9 +513,10 @@
     "prediction": "关注 Morocco 对阵 Scotland 的比赛结果",
     "supported_team": "Morocco",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 696.6444,
+    "total_points": 696,
     "watched": true
   },
   {
@@ -501,9 +531,10 @@
     "prediction": "关注 Brazil 对阵 Haiti 的比赛结果",
     "supported_team": "Brazil",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 686.6444,
+    "total_points": 686,
     "watched": true
   },
   {
@@ -518,9 +549,10 @@
     "prediction": "关注 Paraguay 对阵 Turkey 的比赛结果",
     "supported_team": "Paraguay",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 676.6444,
+    "total_points": 676,
     "watched": true
   },
   {
@@ -533,9 +565,10 @@
     "prediction": "关注 United States 对阵 Brazil 的比赛结果",
     "supported_team": "United States",
     "weight": 40,
+    "confidence_percent": 80,
     "result": "correct",
-    "points_change": 30.303,
-    "total_points": 706.9474,
+    "points_change": 30,
+    "total_points": 706,
     "watched": false
   },
   {
@@ -550,9 +583,10 @@
     "prediction": "关注 Sweden 对阵 Netherlands 的比赛结果",
     "supported_team": "Sweden",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "correct",
-    "points_change": 20.979,
-    "total_points": 727.9264,
+    "points_change": 21,
+    "total_points": 727,
     "watched": true
   },
   {
@@ -567,9 +601,10 @@
     "prediction": "关注 Germany 对阵 Ivory Coast 的比赛结果",
     "supported_team": "Germany",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "correct",
     "points_change": 15,
-    "total_points": 742.9264,
+    "total_points": 742,
     "watched": true
   },
   {
@@ -584,9 +619,10 @@
     "prediction": "关注 Curaçao 对阵 Ecuador 的比赛结果",
     "supported_team": "Curaçao",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "incorrect",
     "points_change": -30,
-    "total_points": 712.9264,
+    "total_points": 712,
     "watched": true
   },
   {
@@ -601,9 +637,10 @@
     "prediction": "关注 Japan 对阵 Tunisia 的比赛结果",
     "supported_team": "Japan",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "incorrect",
     "points_change": -30,
-    "total_points": 682.9264,
+    "total_points": 682,
     "watched": true
   },
   {
@@ -618,9 +655,10 @@
     "prediction": "关注 Sweden 对阵 Netherlands 的比赛结果",
     "supported_team": "Sweden",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 672.9264,
+    "total_points": 672,
     "watched": true
   },
   {
@@ -635,9 +673,10 @@
     "prediction": "关注 Germany 对阵 Ivory Coast 的比赛结果",
     "supported_team": "Germany",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 662.9264,
+    "total_points": 662,
     "watched": true
   },
   {
@@ -652,9 +691,10 @@
     "prediction": "关注 Curaçao 对阵 Ecuador 的比赛结果",
     "supported_team": "Curaçao",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 652.9264,
+    "total_points": 652,
     "watched": true
   },
   {
@@ -669,9 +709,10 @@
     "prediction": "关注 Japan 对阵 Tunisia 的比赛结果",
     "supported_team": "Japan",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 642.9264,
+    "total_points": 642,
     "watched": true
   },
   {
@@ -686,9 +727,10 @@
     "prediction": "支持 Spain",
     "supported_team": "Spain",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 632.9264,
+    "total_points": 632,
     "watched": true
   },
   {
@@ -703,9 +745,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 622.9264,
+    "total_points": 622,
     "watched": true
   },
   {
@@ -720,9 +763,10 @@
     "prediction": "支持 Egypt",
     "supported_team": "Egypt",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 612.9264,
+    "total_points": 612,
     "watched": true
   },
   {
@@ -737,9 +781,10 @@
     "prediction": "关注 Spain 对阵 Belgium 的比赛结果",
     "supported_team": "Spain",
     "weight": 40,
+    "confidence_percent": 80,
     "result": "incorrect",
     "points_change": -40,
-    "total_points": 572.9264,
+    "total_points": 572,
     "watched": true
   },
   {
@@ -754,9 +799,10 @@
     "prediction": "关注 Argentina 对阵 Austria 的比赛结果",
     "supported_team": "Argentina",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 562.9264,
+    "total_points": 562,
     "watched": true
   },
   {
@@ -771,9 +817,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 300,
+    "confidence_percent": 100,
     "result": "correct",
-    "points_change": 25.8,
-    "total_points": 588.7264,
+    "points_change": 26,
+    "total_points": 588,
     "watched": true
   },
   {
@@ -788,9 +835,10 @@
     "prediction": "关注 Norway 对阵 Senegal 的比赛结果",
     "supported_team": "Norway",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 578.7264,
+    "total_points": 578,
     "watched": true
   },
   {
@@ -803,9 +851,10 @@
     "prediction": "关注 France 对阵 Austria 的比赛结果",
     "supported_team": "France",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 568.7264,
+    "total_points": 568,
     "watched": true
   },
   {
@@ -818,9 +867,10 @@
     "prediction": "关注 France 对阵 Norway 的比赛结果",
     "supported_team": "France",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 558.7264,
+    "total_points": 558,
     "watched": true
   },
   {
@@ -835,9 +885,10 @@
     "prediction": "支持 Portugal",
     "supported_team": "Portugal",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 548.7264,
+    "total_points": 548,
     "watched": true
   },
   {
@@ -850,9 +901,10 @@
     "prediction": "支持 Portugal",
     "supported_team": "Portugal",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
-    "points_change": 1.55,
-    "total_points": 550.2764,
+    "points_change": 2,
+    "total_points": 550,
     "watched": false
   },
   {
@@ -867,9 +919,10 @@
     "prediction": "关注 England 对阵 Ghana 的比赛结果",
     "supported_team": "England",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 530.2764,
+    "total_points": 530,
     "watched": true
   },
   {
@@ -884,9 +937,10 @@
     "prediction": "支持 Croatia",
     "supported_team": "Croatia",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
-    "points_change": 10.4,
-    "total_points": 540.6764,
+    "points_change": 10,
+    "total_points": 540,
     "watched": true
   },
   {
@@ -901,9 +955,10 @@
     "prediction": "关注 Colombia 对阵 Democratic Republic of the Congo 的比赛结果",
     "supported_team": "Colombia",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
-    "points_change": 11.2,
-    "total_points": 551.8764,
+    "points_change": 11,
+    "total_points": 551,
     "watched": true
   },
   {
@@ -916,9 +971,10 @@
     "prediction": "关注 England 对阵 Colombia 的比赛结果",
     "supported_team": "England",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 546.8764,
+    "total_points": 546,
     "watched": true
   },
   {
@@ -931,9 +987,10 @@
     "prediction": "关注 Bosnia and Herzegovina 对阵 Brazil 的比赛结果",
     "supported_team": "Bosnia and Herzegovina",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
-    "points_change": 21.8,
-    "total_points": 568.6764,
+    "points_change": 22,
+    "total_points": 568,
     "watched": false
   },
   {
@@ -946,9 +1003,10 @@
     "prediction": "关注 Sweden 对阵 Mexico 的比赛结果",
     "supported_team": "Sweden",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 548.6764,
+    "total_points": 548,
     "watched": true
   },
   {
@@ -961,9 +1019,10 @@
     "prediction": "关注 Canada 对阵 Bosnia and Herzegovina 的比赛结果",
     "supported_team": "Canada",
     "weight": 2,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -2,
-    "total_points": 546.6764,
+    "total_points": 546,
     "watched": true
   },
   {
@@ -976,9 +1035,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 50,
+    "confidence_percent": 100,
     "result": "incorrect",
     "points_change": -50,
-    "total_points": 496.6764,
+    "total_points": 496,
     "watched": true
   },
   {
@@ -991,9 +1051,10 @@
     "prediction": "关注 United States 对阵 Germany 的比赛结果",
     "supported_team": "United States",
     "weight": 40,
+    "confidence_percent": 80,
     "result": "incorrect",
     "points_change": -40,
-    "total_points": 456.6764,
+    "total_points": 456,
     "watched": true
   },
   {
@@ -1006,9 +1067,10 @@
     "prediction": "关注 Australia 对阵 Japan 的比赛结果",
     "supported_team": "Australia",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
     "points_change": 120,
-    "total_points": 576.6764,
+    "total_points": 576,
     "watched": true
   },
   {
@@ -1021,9 +1083,10 @@
     "prediction": "关注 Curaçao 对阵 Netherlands 的比赛结果",
     "supported_team": "Curaçao",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 566.6764,
+    "total_points": 566,
     "watched": true
   },
   {
@@ -1038,9 +1101,10 @@
     "prediction": "支持 Netherlands",
     "supported_team": "Netherlands",
     "weight": 50,
+    "confidence_percent": 100,
     "result": "incorrect",
     "points_change": -50,
-    "total_points": 516.6764,
+    "total_points": 516,
     "watched": true
   },
   {
@@ -1055,9 +1119,10 @@
     "prediction": "支持 Belgium",
     "supported_team": "Belgium",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "correct",
     "points_change": 15,
-    "total_points": 531.6764,
+    "total_points": 531,
     "watched": true
   },
   {
@@ -1072,9 +1137,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 521.6764,
+    "total_points": 521,
     "watched": true
   },
   {
@@ -1087,9 +1153,10 @@
     "prediction": "关注 Belgium 对阵 Cape Verde 的比赛结果",
     "supported_team": "Belgium",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 516.6764,
+    "total_points": 516,
     "watched": true
   },
   {
@@ -1104,9 +1171,10 @@
     "prediction": "关注 Belgium 对阵 Egypt 的比赛结果",
     "supported_team": "Belgium",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 511.6764,
+    "total_points": 511,
     "watched": true
   },
   {
@@ -1121,9 +1189,10 @@
     "prediction": "支持 Argentina",
     "supported_team": "Argentina",
     "weight": 0,
+    "confidence_percent": 20,
     "result": "pending",
     "points_change": 0,
-    "total_points": 511.6764,
+    "total_points": 511,
     "watched": true
   },
   {
@@ -1138,9 +1207,10 @@
     "prediction": "关注 Canada 对阵 South Africa 的比赛结果",
     "supported_team": "Canada",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 506.6764,
+    "total_points": 506,
     "watched": true
   },
   {
@@ -1153,9 +1223,10 @@
     "prediction": "支持 Canada",
     "supported_team": "Canada",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
     "points_change": 6,
-    "total_points": 512.6764,
+    "total_points": 512,
     "watched": false
   },
   {
@@ -1170,9 +1241,10 @@
     "prediction": "支持 Japan",
     "supported_team": "Japan",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "pending",
     "points_change": 0,
-    "total_points": 512.6764,
+    "total_points": 512,
     "watched": true
   },
   {
@@ -1187,9 +1259,10 @@
     "prediction": "支持 Germany",
     "supported_team": "Germany",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 492.6764,
+    "total_points": 492,
     "watched": true
   },
   {
@@ -1204,9 +1277,10 @@
     "prediction": "支持 Netherlands",
     "supported_team": "Netherlands",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 472.6764,
+    "total_points": 472,
     "watched": true
   },
   {
@@ -1219,9 +1293,10 @@
     "prediction": "关注 Germany 对阵 Japan 的比赛结果",
     "supported_team": "Germany",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 467.6764,
+    "total_points": 467,
     "watched": true
   },
   {
@@ -1234,9 +1309,10 @@
     "prediction": "关注 Germany 对阵 Netherlands 的比赛结果",
     "supported_team": "Germany",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 462.6764,
+    "total_points": 462,
     "watched": true
   },
   {
@@ -1249,9 +1325,10 @@
     "prediction": "关注 England 对阵 Democratic Republic of the Congo 的比赛结果",
     "supported_team": "England",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
     "points_change": 6,
-    "total_points": 468.6764,
+    "total_points": 468,
     "watched": true
   },
   {
@@ -1266,9 +1343,10 @@
     "prediction": "关注 Belgium 对阵 Senegal 的比赛结果",
     "supported_team": "Belgium",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 463.6764,
+    "total_points": 463,
     "watched": true
   },
   {
@@ -1283,9 +1361,10 @@
     "prediction": "关注 United States 对阵 Bosnia and Herzegovina 的比赛结果",
     "supported_team": "United States",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "correct",
-    "points_change": 12.3,
-    "total_points": 475.9764,
+    "points_change": 12,
+    "total_points": 475,
     "watched": true
   },
   {
@@ -1298,9 +1377,10 @@
     "prediction": "关注 United States 对阵 Bosnia and Herzegovina 的比赛结果",
     "supported_team": "United States",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 470.9764,
+    "total_points": 470,
     "watched": true
   },
   {
@@ -1313,9 +1393,10 @@
     "prediction": "关注 United States 对阵 England 的比赛结果",
     "supported_team": "United States",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
-    "points_change": 6.25,
-    "total_points": 477.2264,
+    "points_change": 6,
+    "total_points": 476,
     "watched": true
   },
   {
@@ -1330,9 +1411,10 @@
     "prediction": "关注 Spain 对阵 Austria 的比赛结果",
     "supported_team": "Spain",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 467.2264,
+    "total_points": 466,
     "watched": true
   },
   {
@@ -1347,9 +1429,10 @@
     "prediction": "关注 Portugal 对阵 Croatia 的比赛结果",
     "supported_team": "Portugal",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 457.2264,
+    "total_points": 456,
     "watched": true
   },
   {
@@ -1362,9 +1445,10 @@
     "prediction": "关注 Switzerland 对阵 Germany 的比赛结果",
     "supported_team": "Switzerland",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 447.2264,
+    "total_points": 446,
     "watched": true
   },
   {
@@ -1379,9 +1463,10 @@
     "prediction": "支持 Spain",
     "supported_team": "Spain",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 437.2264,
+    "total_points": 436,
     "watched": true
   },
   {
@@ -1396,9 +1481,10 @@
     "prediction": "支持 Portugal",
     "supported_team": "Portugal",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 427.2264,
+    "total_points": 426,
     "watched": true
   },
   {
@@ -1413,9 +1499,10 @@
     "prediction": "支持 Switzerland",
     "supported_team": "Switzerland",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 417.2264,
+    "total_points": 416,
     "watched": true
   },
   {
@@ -1428,9 +1515,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
     "points_change": 5,
-    "total_points": 422.2264,
+    "total_points": 421,
     "watched": true
   },
   {
@@ -1445,9 +1533,10 @@
     "prediction": "支持 Algeria",
     "supported_team": "Algeria",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 417.2264,
+    "total_points": 416,
     "watched": true
   },
   {
@@ -1462,9 +1551,10 @@
     "prediction": "支持 Egypt",
     "supported_team": "Egypt",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 407.2264,
+    "total_points": 406,
     "watched": true
   },
   {
@@ -1479,9 +1569,10 @@
     "prediction": "支持 Argentina",
     "supported_team": "Argentina",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 397.2264,
+    "total_points": 396,
     "watched": true
   },
   {
@@ -1496,9 +1587,10 @@
     "prediction": "支持 Ghana",
     "supported_team": "Ghana",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 387.2264,
+    "total_points": 386,
     "watched": true
   },
   {
@@ -1511,9 +1603,10 @@
     "prediction": "关注 Australia 对阵 Colombia 的比赛结果",
     "supported_team": "Australia",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 382.2264,
+    "total_points": 381,
     "watched": true
   },
   {
@@ -1528,9 +1621,10 @@
     "prediction": "关注 Argentina 对阵 Cape Verde 的比赛结果",
     "supported_team": "Argentina",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 377.2264,
+    "total_points": 376,
     "watched": true
   },
   {
@@ -1545,9 +1639,10 @@
     "prediction": "支持 Colombia",
     "supported_team": "Colombia",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 367.2264,
+    "total_points": 366,
     "watched": true
   },
   {
@@ -1562,9 +1657,10 @@
     "prediction": "关注 Canada 对阵 Morocco 的比赛结果",
     "supported_team": "Canada",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
     "points_change": 30,
-    "total_points": 397.2264,
+    "total_points": 396,
     "watched": true
   },
   {
@@ -1579,9 +1675,10 @@
     "prediction": "关注 Paraguay 对阵 France 的比赛结果",
     "supported_team": "Paraguay",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 387.2264,
+    "total_points": 386,
     "watched": true
   },
   {
@@ -1596,9 +1693,10 @@
     "prediction": "支持 Canada",
     "supported_team": "Canada",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 382.2264,
+    "total_points": 381,
     "watched": true
   },
   {
@@ -1613,9 +1711,10 @@
     "prediction": "支持 Paraguay",
     "supported_team": "Paraguay",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 377.2264,
+    "total_points": 376,
     "watched": true
   },
   {
@@ -1630,9 +1729,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 50,
+    "confidence_percent": 100,
     "result": "correct",
-    "points_change": 3.125,
-    "total_points": 380.3514,
+    "points_change": 3,
+    "total_points": 379,
     "watched": true
   },
   {
@@ -1645,9 +1745,10 @@
     "prediction": "关注 Paraguay 对阵 Canada 的比赛结果",
     "supported_team": "Paraguay",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 375.3514,
+    "total_points": 374,
     "watched": true
   },
   {
@@ -1662,9 +1763,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 355.3514,
+    "total_points": 354,
     "watched": true
   },
   {
@@ -1679,9 +1781,10 @@
     "prediction": "关注 Brazil 对阵 Norway 的比赛结果",
     "supported_team": "Brazil",
     "weight": 15,
+    "confidence_percent": 60,
     "result": "correct",
-    "points_change": 49.95,
-    "total_points": 405.3014,
+    "points_change": 50,
+    "total_points": 404,
     "watched": true
   },
   {
@@ -1696,9 +1799,10 @@
     "prediction": "关注 Mexico 对阵 England 的比赛结果",
     "supported_team": "Mexico",
     "weight": 15,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -15,
-    "total_points": 390.3014,
+    "total_points": 389,
     "watched": true
   },
   {
@@ -1713,9 +1817,10 @@
     "prediction": "关注 Brazil 对阵 Norway 的比赛结果",
     "supported_team": "Brazil",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 385.3014,
+    "total_points": 384,
     "watched": true
   },
   {
@@ -1730,9 +1835,10 @@
     "prediction": "关注 Mexico 对阵 England 的比赛结果",
     "supported_team": "Mexico",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 380.3014,
+    "total_points": 379,
     "watched": true
   },
   {
@@ -1747,9 +1853,10 @@
     "prediction": "支持 Norway",
     "supported_team": "Norway",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "correct",
     "points_change": 11,
-    "total_points": 391.3014,
+    "total_points": 390,
     "watched": true
   },
   {
@@ -1764,9 +1871,10 @@
     "prediction": "支持 Mexico",
     "supported_team": "Mexico",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 386.3014,
+    "total_points": 385,
     "watched": true
   },
   {
@@ -1781,9 +1889,10 @@
     "prediction": "关注 Spain 对阵 Portugal 的比赛结果",
     "supported_team": "Spain",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 381.3014,
+    "total_points": 380,
     "watched": true
   },
   {
@@ -1796,9 +1905,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 15,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -15,
-    "total_points": 366.3014,
+    "total_points": 365,
     "watched": true
   },
   {
@@ -1811,9 +1921,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 356.3014,
+    "total_points": 355,
     "watched": true
   },
   {
@@ -1828,9 +1939,10 @@
     "prediction": "关注 United States 对阵 Belgium 的比赛结果",
     "supported_team": "United States",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 351.3014,
+    "total_points": 350,
     "watched": true
   },
   {
@@ -1843,9 +1955,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 15,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -15,
-    "total_points": 336.3014,
+    "total_points": 335,
     "watched": true
   },
   {
@@ -1860,9 +1973,10 @@
     "prediction": "支持 United States",
     "supported_team": "United States",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 326.3014,
+    "total_points": 325,
     "watched": true
   },
   {
@@ -1877,9 +1991,10 @@
     "prediction": "关注 Argentina 对阵 Egypt 的比赛结果",
     "supported_team": "Argentina",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 321.3014,
+    "total_points": 320,
     "watched": true
   },
   {
@@ -1892,9 +2007,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 15,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -15,
-    "total_points": 306.3014,
+    "total_points": 305,
     "watched": true
   },
   {
@@ -1909,9 +2025,10 @@
     "prediction": "支持 Switzerland",
     "supported_team": "Switzerland",
     "weight": 15,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -15,
-    "total_points": 291.3014,
+    "total_points": 290,
     "watched": true
   },
   {
@@ -1926,9 +2043,10 @@
     "prediction": "关注 Switzerland 对阵 Argentina 的比赛结果",
     "supported_team": "Switzerland",
     "weight": 25,
+    "confidence_percent": 80,
     "result": "correct",
-    "points_change": 40.5,
-    "total_points": 331.8014,
+    "points_change": 40,
+    "total_points": 330,
     "watched": true
   },
   {
@@ -1943,9 +2061,10 @@
     "prediction": "支持 Argentina",
     "supported_team": "Argentina",
     "weight": 266,
+    "confidence_percent": 100,
     "result": "correct",
     "points_change": 38,
-    "total_points": 369.8014,
+    "total_points": 368,
     "watched": true
   },
   {
@@ -1960,9 +2079,10 @@
     "prediction": "关注 Morocco 对阵 France 的比赛结果",
     "supported_team": "Morocco",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
     "points_change": 25,
-    "total_points": 394.8014,
+    "total_points": 393,
     "watched": true
   },
   {
@@ -1977,9 +2097,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
     "points_change": 65,
-    "total_points": 459.8014,
+    "total_points": 458,
     "watched": true
   },
   {
@@ -1994,9 +2115,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
     "points_change": 30,
-    "total_points": 489.8014,
+    "total_points": 488,
     "watched": true
   },
   {
@@ -2011,9 +2133,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 50,
+    "confidence_percent": 100,
     "result": "correct",
-    "points_change": 12.5,
-    "total_points": 502.3014,
+    "points_change": 12,
+    "total_points": 500,
     "watched": true
   },
   {
@@ -2028,9 +2151,10 @@
     "prediction": "关注 Spain 对阵 Belgium 的比赛结果",
     "supported_team": "Spain",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 492.3014,
+    "total_points": 490,
     "watched": true
   },
   {
@@ -2045,9 +2169,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 482.3014,
+    "total_points": 480,
     "watched": true
   },
   {
@@ -2062,9 +2187,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 472.3014,
+    "total_points": 470,
     "watched": true
   },
   {
@@ -2079,9 +2205,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 462.3014,
+    "total_points": 460,
     "watched": true
   },
   {
@@ -2096,9 +2223,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 40,
+    "confidence_percent": 80,
     "result": "correct",
-    "points_change": 11.976,
-    "total_points": 474.2774,
+    "points_change": 12,
+    "total_points": 472,
     "watched": true
   },
   {
@@ -2113,9 +2241,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "correct",
-    "points_change": 15.9,
-    "total_points": 490.1774,
+    "points_change": 16,
+    "total_points": 488,
     "watched": true
   },
   {
@@ -2130,9 +2259,10 @@
     "prediction": "关注 England 对阵 Norway 的比赛结果",
     "supported_team": "England",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 480.1774,
+    "total_points": 478,
     "watched": true
   },
   {
@@ -2145,9 +2275,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 460.1774,
+    "total_points": 458,
     "watched": true
   },
   {
@@ -2160,9 +2291,10 @@
     "prediction": "关注 Switzerland 对阵 Argentina 的比赛结果",
     "supported_team": "Switzerland",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 440.1774,
+    "total_points": 438,
     "watched": true
   },
   {
@@ -2175,9 +2307,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 430.1774,
+    "total_points": 428,
     "watched": true
   },
   {
@@ -2192,9 +2325,10 @@
     "prediction": "关注 Argentina 对阵 England 的比赛结果",
     "supported_team": "Argentina",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
     "points_change": 19,
-    "total_points": 449.1774,
+    "total_points": 447,
     "watched": true
   },
   {
@@ -2209,9 +2343,10 @@
     "prediction": "支持 Switzerland",
     "supported_team": "Switzerland",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "correct",
     "points_change": 5,
-    "total_points": 454.1774,
+    "total_points": 452,
     "watched": true
   },
   {
@@ -2224,9 +2359,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 444.1774,
+    "total_points": 442,
     "watched": true
   },
   {
@@ -2241,9 +2377,10 @@
     "prediction": "关注 France 对阵 Spain 的比赛结果",
     "supported_team": "France",
     "weight": 5,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -5,
-    "total_points": 439.1774,
+    "total_points": 437,
     "watched": true
   },
   {
@@ -2258,9 +2395,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 429.1774,
+    "total_points": 427,
     "watched": true
   },
   {
@@ -2275,9 +2413,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 25,
+    "confidence_percent": 80,
     "result": "incorrect",
     "points_change": -25,
-    "total_points": 404.1774,
+    "total_points": 402,
     "watched": true
   },
   {
@@ -2292,9 +2431,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 40,
+    "confidence_percent": 80,
     "result": "incorrect",
     "points_change": -40,
-    "total_points": 364.1774,
+    "total_points": 362,
     "watched": true
   },
   {
@@ -2309,9 +2449,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 354.1774,
+    "total_points": 352,
     "watched": true
   },
   {
@@ -2326,9 +2467,10 @@
     "prediction": "关注 Argentina 对阵 England 的比赛结果",
     "supported_team": "Argentina",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 344.1774,
+    "total_points": 342,
     "watched": true
   },
   {
@@ -2343,9 +2485,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 334.1774,
+    "total_points": 332,
     "watched": true
   },
   {
@@ -2360,9 +2503,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 15,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -15,
-    "total_points": 319.1774,
+    "total_points": 317,
     "watched": true
   },
   {
@@ -2377,9 +2521,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 15,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -15,
-    "total_points": 304.1774,
+    "total_points": 302,
     "watched": true
   },
   {
@@ -2394,9 +2539,10 @@
     "prediction": "支持 England",
     "supported_team": "England",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 284.1774,
+    "total_points": 282,
     "watched": true
   },
   {
@@ -2411,9 +2557,10 @@
     "prediction": "支持 England",
     "supported_team": "England",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "incorrect",
     "points_change": -30,
-    "total_points": 254.1774,
+    "total_points": 252,
     "watched": true
   },
   {
@@ -2428,9 +2575,10 @@
     "prediction": "关注 France 对阵 England 的比赛结果",
     "supported_team": "France",
     "weight": 40,
+    "confidence_percent": 80,
     "result": "pending",
     "points_change": 0,
-    "total_points": 254.1774,
+    "total_points": 252,
     "watched": true
   },
   {
@@ -2445,9 +2593,10 @@
     "prediction": "关注 France 对阵 England 的比赛结果",
     "supported_team": "France",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "pending",
     "points_change": 0,
-    "total_points": 254.1774,
+    "total_points": 252,
     "watched": true
   },
   {
@@ -2460,6 +2609,7 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 300,
+    "confidence_percent": 100,
     "result": "pending",
     "points_change": 0,
     "total_points": 100,
@@ -2475,6 +2625,7 @@
     "prediction": "支持 Tunisia",
     "supported_team": "Tunisia",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "incorrect",
     "points_change": -30,
     "total_points": 70,
@@ -2490,6 +2641,7 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 3,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -3,
     "total_points": 67,
@@ -2505,6 +2657,7 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 3,
+    "confidence_percent": 20,
     "result": "incorrect",
     "points_change": -3,
     "total_points": 64,
@@ -2520,6 +2673,7 @@
     "prediction": "关注 United States 对阵 Sweden 的比赛结果",
     "supported_team": "United States",
     "weight": 6,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -6,
     "total_points": 58,
@@ -2537,6 +2691,7 @@
     "prediction": "支持 Democratic Republic of the Congo",
     "supported_team": "Democratic Republic of the Congo",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
     "total_points": 48,
@@ -2554,6 +2709,7 @@
     "prediction": "支持 Democratic Republic of the Congo",
     "supported_team": "Democratic Republic of the Congo",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
     "total_points": 38,
@@ -2571,6 +2727,7 @@
     "prediction": "支持 Netherlands",
     "supported_team": "Netherlands",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
     "total_points": 28,
@@ -2586,6 +2743,7 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 12,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -12,
     "total_points": 16,
@@ -2601,6 +2759,7 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
     "points_change": 110,
     "total_points": 126,
@@ -2618,6 +2777,7 @@
     "prediction": "关注 Belgium 对阵 Senegal 的比赛结果",
     "supported_team": "Belgium",
     "weight": 8,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -8,
     "total_points": 118,
@@ -2635,6 +2795,7 @@
     "prediction": "关注 Portugal 对阵 Croatia 的比赛结果",
     "supported_team": "Portugal",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
     "total_points": 108,
@@ -2650,6 +2811,7 @@
     "prediction": "关注 Spain 对阵 Portugal 的比赛结果",
     "supported_team": "Spain",
     "weight": 8,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -8,
     "total_points": 100,
@@ -2667,6 +2829,7 @@
     "prediction": "支持 Portugal",
     "supported_team": "Portugal",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
     "total_points": 90,
@@ -2684,6 +2847,7 @@
     "prediction": "关注 Argentina 对阵 Cape Verde 的比赛结果",
     "supported_team": "Argentina",
     "weight": 6,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -6,
     "total_points": 84,
@@ -2699,6 +2863,7 @@
     "prediction": "关注 Australia 对阵 Argentina 的比赛结果",
     "supported_team": "Australia",
     "weight": 6,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -6,
     "total_points": 78,
@@ -2716,6 +2881,7 @@
     "prediction": "支持 Colombia",
     "supported_team": "Colombia",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
     "total_points": 58,
@@ -2731,6 +2897,7 @@
     "prediction": "关注 Paraguay 对阵 Canada 的比赛结果",
     "supported_team": "Paraguay",
     "weight": 9,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -9,
     "total_points": 49,
@@ -2748,9 +2915,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 60,
+    "confidence_percent": 100,
     "result": "correct",
-    "points_change": 26.6,
-    "total_points": 75.6,
+    "points_change": 27,
+    "total_points": 76,
     "watched": true
   },
   {
@@ -2765,9 +2933,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -20,
-    "total_points": 55.6,
+    "total_points": 56,
     "watched": true
   },
   {
@@ -2780,9 +2949,10 @@
     "prediction": "关注 Brazil 对阵 Mexico 的比赛结果",
     "supported_team": "Brazil",
     "weight": 8,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -8,
-    "total_points": 47.6,
+    "total_points": 48,
     "watched": true
   },
   {
@@ -2795,9 +2965,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 6,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -6,
-    "total_points": 41.6,
+    "total_points": 42,
     "watched": true
   },
   {
@@ -2810,9 +2981,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
     "points_change": 22,
-    "total_points": 63.6,
+    "total_points": 64,
     "watched": true
   },
   {
@@ -2825,9 +2997,10 @@
     "prediction": "关注 Mexico 对阵 Norway 的比赛结果",
     "supported_team": "Mexico",
     "weight": 8,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -8,
-    "total_points": 55.6,
+    "total_points": 56,
     "watched": true
   },
   {
@@ -2840,9 +3013,10 @@
     "prediction": "关注 United States 对阵 Spain 的比赛结果",
     "supported_team": "United States",
     "weight": 6,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -6,
-    "total_points": 49.6,
+    "total_points": 50,
     "watched": true
   },
   {
@@ -2857,9 +3031,10 @@
     "prediction": "支持 Spain",
     "supported_team": "Spain",
     "weight": 56,
+    "confidence_percent": 100,
     "result": "correct",
     "points_change": 24,
-    "total_points": 73.6,
+    "total_points": 74,
     "watched": true
   },
   {
@@ -2874,9 +3049,10 @@
     "prediction": "支持 United States",
     "supported_team": "United States",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 63.6,
+    "total_points": 64,
     "watched": true
   },
   {
@@ -2891,9 +3067,10 @@
     "prediction": "支持 United States",
     "supported_team": "United States",
     "weight": 8,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -8,
-    "total_points": 55.6,
+    "total_points": 56,
     "watched": true
   },
   {
@@ -2908,9 +3085,10 @@
     "prediction": "支持 United States",
     "supported_team": "United States",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
-    "points_change": 13.75,
-    "total_points": 69.35,
+    "points_change": 14,
+    "total_points": 70,
     "watched": true
   },
   {
@@ -2925,9 +3103,10 @@
     "prediction": "关注 Switzerland 对阵 Argentina 的比赛结果",
     "supported_team": "Switzerland",
     "weight": 8,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -8,
-    "total_points": 61.35,
+    "total_points": 62,
     "watched": true
   },
   {
@@ -2940,9 +3119,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 12,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -12,
-    "total_points": 49.35,
+    "total_points": 50,
     "watched": true
   },
   {
@@ -2957,9 +3137,10 @@
     "prediction": "支持 Morocco",
     "supported_team": "Morocco",
     "weight": 12,
+    "confidence_percent": 60,
     "result": "correct",
     "points_change": 192,
-    "total_points": 241.35,
+    "total_points": 242,
     "watched": true
   },
   {
@@ -2974,9 +3155,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 12,
+    "confidence_percent": 60,
     "result": "correct",
     "points_change": 78,
-    "total_points": 319.35,
+    "total_points": 320,
     "watched": true
   },
   {
@@ -2991,9 +3173,10 @@
     "prediction": "支持 Spain",
     "supported_team": "Spain",
     "weight": 8,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -8,
-    "total_points": 311.35,
+    "total_points": 312,
     "watched": true
   },
   {
@@ -3008,9 +3191,10 @@
     "prediction": "关注 Spain 对阵 Belgium 的比赛结果",
     "supported_team": "Spain",
     "weight": 6,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -6,
-    "total_points": 305.35,
+    "total_points": 306,
     "watched": true
   },
   {
@@ -3023,9 +3207,10 @@
     "prediction": "关注 Switzerland 对阵 Argentina 的比赛结果",
     "supported_team": "Switzerland",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 295.35,
+    "total_points": 296,
     "watched": true
   },
   {
@@ -3040,9 +3225,10 @@
     "prediction": "关注 England 对阵 Norway 的比赛结果",
     "supported_team": "England",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "correct",
     "points_change": 100,
-    "total_points": 395.35,
+    "total_points": 396,
     "watched": true
   },
   {
@@ -3057,9 +3243,10 @@
     "prediction": "支持 Argentina",
     "supported_team": "Argentina",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 385.35,
+    "total_points": 386,
     "watched": true
   },
   {
@@ -3072,9 +3259,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 375.35,
+    "total_points": 376,
     "watched": true
   },
   {
@@ -3089,9 +3277,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 12,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -12,
-    "total_points": 363.35,
+    "total_points": 364,
     "watched": true
   },
   {
@@ -3106,9 +3295,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 353.35,
+    "total_points": 354,
     "watched": true
   },
   {
@@ -3123,9 +3313,10 @@
     "prediction": "支持 Spain",
     "supported_team": "Spain",
     "weight": 8,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -8,
-    "total_points": 345.35,
+    "total_points": 346,
     "watched": true
   },
   {
@@ -3140,9 +3331,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 20,
+    "confidence_percent": 60,
     "result": "correct",
     "points_change": 45,
-    "total_points": 390.35,
+    "total_points": 391,
     "watched": true
   },
   {
@@ -3157,9 +3349,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 30,
+    "confidence_percent": 80,
     "result": "incorrect",
     "points_change": -15,
-    "total_points": 375.35,
+    "total_points": 376,
     "watched": true
   },
   {
@@ -3174,9 +3367,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 8,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -8,
-    "total_points": 367.35,
+    "total_points": 368,
     "watched": true
   },
   {
@@ -3191,9 +3385,10 @@
     "prediction": "支持 Argentina",
     "supported_team": "Argentina",
     "weight": 12,
+    "confidence_percent": 60,
     "result": "incorrect",
     "points_change": -12,
-    "total_points": 355.35,
+    "total_points": 356,
     "watched": true
   },
   {
@@ -3208,9 +3403,10 @@
     "prediction": "支持 Argentina",
     "supported_team": "Argentina",
     "weight": 8,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -8,
-    "total_points": 347.35,
+    "total_points": 348,
     "watched": true
   },
   {
@@ -3225,9 +3421,10 @@
     "prediction": "关注 Argentina 对阵 England 的比赛结果",
     "supported_team": "Argentina",
     "weight": 10,
+    "confidence_percent": 40,
     "result": "incorrect",
     "points_change": -10,
-    "total_points": 337.35,
+    "total_points": 338,
     "watched": true
   },
   {
@@ -3242,9 +3439,10 @@
     "prediction": "支持 Argentina",
     "supported_team": "Argentina",
     "weight": 60,
+    "confidence_percent": 100,
     "result": "correct",
-    "points_change": 31.5,
-    "total_points": 368.85,
+    "points_change": 32,
+    "total_points": 370,
     "watched": true
   },
   {
@@ -3259,9 +3457,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 12,
+    "confidence_percent": 60,
     "result": "pending",
     "points_change": 0,
-    "total_points": 368.85,
+    "total_points": 370,
     "watched": true
   },
   {
@@ -3276,9 +3475,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 40,
+    "confidence_percent": 80,
     "result": "pending",
     "points_change": 0,
-    "total_points": 368.85,
+    "total_points": 370,
     "watched": true
   },
   {
@@ -3293,9 +3493,10 @@
     "prediction": "支持 France",
     "supported_team": "France",
     "weight": 40,
+    "confidence_percent": 80,
     "result": "pending",
     "points_change": 0,
-    "total_points": 368.85,
+    "total_points": 370,
     "watched": true
   },
   {
@@ -3310,9 +3511,10 @@
     "prediction": "支持 England",
     "supported_team": "England",
     "weight": 60,
+    "confidence_percent": 100,
     "result": "pending",
     "points_change": 0,
-    "total_points": 368.85,
+    "total_points": 370,
     "watched": true
   },
   {
@@ -3327,9 +3529,10 @@
     "prediction": "赛事结果预测",
     "supported_team": "",
     "weight": 60,
+    "confidence_percent": 100,
     "result": "pending",
     "points_change": 0,
-    "total_points": 368.85,
+    "total_points": 370,
     "watched": true
   }
 ]
