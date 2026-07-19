@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+DB_PATH="${DB_PATH:-/var/lib/worldcup/worldcup.db}"
+BACKUP_DIR="${BACKUP_DIR:-/var/backups/worldcup}"
+test -f "$DB_PATH" || { echo "数据库不存在：$DB_PATH" >&2; exit 1; }
+install -d -m 750 -o worldcup -g worldcup "$BACKUP_DIR"
+stamp="$(date -u +%Y%m%dT%H%M%SZ)"
+sqlite3 "$DB_PATH" ".backup '$BACKUP_DIR/worldcup-$stamp.db'"
+gzip "$BACKUP_DIR/worldcup-$stamp.db"
+find "$BACKUP_DIR" -type f -name 'worldcup-*.db.gz' -mtime +7 -delete
+echo "备份完成：$BACKUP_DIR/worldcup-$stamp.db.gz"

@@ -1,0 +1,28 @@
+{
+  "name": "dg-world-cup-v3",
+  "version": "3.0.0-rc.1",
+  "private": true,
+  "description": "2026 DG 世界杯全纪录 V3 — 无现金积分预测与比赛评论",
+  "type": "module",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "NODE_ENV=development COOKIE_SECURE=false node --watch server/app.js",
+    "migrate": "node scripts/migrate.js",
+    "seed": "node scripts/seed.js",
+    "test": "NODE_ENV=test COOKIE_SECURE=false node --test --test-concurrency=1"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^12.6.2",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.2.2"
+  }
+}
