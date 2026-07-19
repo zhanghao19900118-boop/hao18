@@ -1,0 +1,17 @@
+name: V3 CI
+on:
+  pull_request:
+  push:
+    branches: [main, feature/v3-auth-comments]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: node --check app.js && node --check v3-ui.js && node --check server/app.js
