@@ -87,15 +87,31 @@ test('admin can create user, keep immutable code, rename username, and protect l
 test('admin CSV-style import preserves fields and two-decimal confidence', async () => {
   const login = await admin.post('/api/auth/login').send({username:'admin',password:'AdminPass123'}).expect(200);
   const target=db.prepare("SELECT user_code FROM users WHERE username='renamed_user'").get();
-  const result=await admin.post('/api/admin/predictions/import').set('X-CSRF-Token',login.body.csrfToken).send({records:[{
+  const records=[{
     record_id:'IMPORT-0001',profile_id:target.user_code,created_at:'2026-06-11',match_ids:'future',game:'Alpha vs Beta',score:'—',
     prediction:'测试积分预测',supported_team:'Alpha',weight:'20',confidence_percent:'67.25',result:'pending',points_change:'0',total_points:'1000',watched:'true'
-  }]}).expect(200);
+  }];
+  const preview=await admin.post('/api/admin/predictions/import').set('X-CSRF-Token',login.body.csrfToken).send({records,dryRun:true}).expect(200);
+  assert.equal(preview.body.inserted,1);
+  assert.equal(db.prepare("SELECT COUNT(*) n FROM predictions WHERE migration_key='IMPORT-0001'").get().n,0);
+  const result=await admin.post('/api/admin/predictions/import').set('X-CSRF-Token',login.body.csrfToken).send({records,dryRun:false}).expect(200);
   assert.equal(result.body.inserted,1);
+  assert.equal(result.body.deleted,0);
   const row=db.prepare("SELECT confidence_percent,source_game,watched FROM predictions WHERE migration_key='IMPORT-0001'").get();
   assert.equal(row.confidence_percent,67.25);
   assert.equal(row.source_game,'Alpha vs Beta');
   assert.equal(row.watched,1);
+
+  records[0].confidence_percent='72.50';
+  const update=await admin.post('/api/admin/predictions/import').set('X-CSRF-Token',login.body.csrfToken).send({records,dryRun:false}).expect(200);
+  assert.equal(update.body.updated,1);
+  assert.equal(update.body.deleted,0);
+  assert.equal(db.prepare("SELECT confidence_percent FROM predictions WHERE migration_key='IMPORT-0001'").get().confidence_percent,72.5);
+
+  const exported=await admin.get('/api/admin/predictions/export.csv').expect(200);
+  assert.match(exported.text,/record_id,profile_id/);
+  assert.match(exported.text,/IMPORT-0001/);
+  assert.match(exported.text,/72\.50/);
 });
 
 test('migration totals remain exactly 149 and 54', () => {

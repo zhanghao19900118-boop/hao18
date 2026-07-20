@@ -25,6 +25,10 @@ const decimalPercent = value => {
   const number = Number(value);
   return Number.isFinite(number) && number >= 0 && number <= 100 ? Math.round(number * 100) / 100 : null;
 };
+const csvCell = value => {
+  const text=String(value ?? '');
+  return /[",\r\n]/.test(text) ? `"${text.replaceAll('"','""')}"` : text;
+};
 const matchLocked = row => Date.now() >= new Date(row.kickoff_at).getTime() + 3 * 60 * 60_000;
 const getMatch = id => db.prepare('SELECT * FROM matches WHERE id=?').get(id);
 const predictionSelect = `SELECT p.*,u.display_name,u.username,m.home_team,m.away_team,m.match_date,m.match_time,m.kickoff_at,m.score match_score
@@ -37,7 +41,7 @@ const predictionJson = row => ({
   totalPoints: Math.round(row.total_points), status: row.status, locked: row.match_id ? matchLocked(row) : true, createdAt: row.created_at, updatedAt: row.updated_at
 });
 
-app.get('/api/health', (_req, res) => res.json({ ok: true, version: '3.1.0-rc.1', database: true, time: nowIso() }));
+app.get('/api/health', (_req, res) => res.json({ ok: true, version: '3.1.1-rc.1', database: true, time: nowIso() }));
 
 app.post('/api/auth/login', loginLimit, (req, res) => {
   const username = cleanText(req.body?.username, 60);
@@ -109,6 +113,7 @@ app.post('/api/matches/:id/predictions', requireUser, (req, res) => {
   if (!Number.isInteger(weight) || weight < 1 || weight > 100) return res.status(400).json({ error: '权重必须是1–100的整数' });
   const info = db.prepare(`INSERT INTO predictions(user_id,match_id,prediction_text,weight,status,total_points)
     VALUES(?,?,?,?, 'open', COALESCE((SELECT total_points FROM predictions WHERE user_id=? ORDER BY created_at DESC,id DESC LIMIT 1),1000))`).run(req.user.id, match.id, text, weight, req.user.id);
+  db.prepare("UPDATE predictions SET migration_key=printf('WEB-%010d',id) WHERE id=?").run(info.lastInsertRowid);
   const row = db.prepare(`${predictionSelect} WHERE p.id=?`).get(info.lastInsertRowid);
   audit(req.user.id, 'prediction_created', 'prediction', info.lastInsertRowid, null, predictionJson(row));
   res.status(201).json(predictionJson(row));
@@ -240,16 +245,36 @@ app.post('/api/admin/users/:id/reset-password', requireAdmin, (req,res) => {
   res.json({ ok:true });
 });
 
+app.get('/api/admin/predictions/export.csv', requireAdmin, (_req,res) => {
+  const headers=['record_id','profile_id','created_at','match_ids','game','score','prediction','supported_team','weight','confidence_percent','result','points_change','total_points','watched'];
+  const rows=db.prepare(`SELECT p.*,u.user_code,m.home_team,m.away_team,m.score match_score
+    FROM predictions p JOIN users u ON u.id=p.user_id LEFT JOIN matches m ON m.id=p.match_id
+    ORDER BY p.created_at,p.id`).all();
+  const output=[headers.join(','),...rows.map(row=>[
+    row.migration_key,row.user_code,row.created_at,row.match_id||'',row.source_game||((row.home_team&&row.away_team)?`${row.home_team} vs ${row.away_team}`:''),
+    row.source_score||row.match_score||'',row.prediction_text,row.supported_team||'',row.weight,
+    row.confidence_percent==null?'':Number(row.confidence_percent).toFixed(2),row.result,row.points_change,row.total_points,row.watched?1:0
+  ].map(csvCell).join(','))].join('\r\n');
+  res.setHeader('Content-Type','text/csv; charset=utf-8');
+  res.setHeader('Content-Disposition',`attachment; filename="predictions-current-${new Date().toISOString().slice(0,10)}.csv"`);
+  res.send(`\uFEFF${output}`);
+});
+
 app.post('/api/admin/predictions/import', requireAdmin, (req,res) => {
   const records=Array.isArray(req.body?.records)?req.body.records:[];
+  const dryRun=req.body?.dryRun!==false;
   if(!records.length||records.length>2000) return res.status(400).json({error:'请上传1–2000条记录'});
   const findUser=db.prepare(`SELECT * FROM users WHERE user_code=? COLLATE NOCASE OR username=? COLLATE NOCASE OR display_name=? COLLATE NOCASE LIMIT 1`);
   const hasMatch=db.prepare('SELECT 1 FROM matches WHERE id=?');
-  const insert=db.prepare(`INSERT INTO predictions(migration_key,user_id,match_id,prediction_text,supported_team,weight,confidence_percent,result,points_change,total_points,source_game,source_score,watched,status,created_at,updated_at)
+  const upsert=db.prepare(`INSERT INTO predictions(migration_key,user_id,match_id,prediction_text,supported_team,weight,confidence_percent,result,points_change,total_points,source_game,source_score,watched,status,created_at,updated_at)
     VALUES(@key,@user,@match,@text,@team,@weight,@confidence,@result,@change,@total,@game,@score,@watched,@status,@created,@created)
-    ON CONFLICT(migration_key) DO NOTHING`);
-  let inserted=0,skipped=0;const errors=[];
-  db.transaction(()=>records.forEach((raw,index)=>{
+    ON CONFLICT(migration_key) DO UPDATE SET user_id=excluded.user_id,match_id=excluded.match_id,prediction_text=excluded.prediction_text,
+      supported_team=excluded.supported_team,weight=excluded.weight,confidence_percent=excluded.confidence_percent,result=excluded.result,
+      points_change=excluded.points_change,total_points=excluded.total_points,source_game=excluded.source_game,source_score=excluded.source_score,
+      watched=excluded.watched,status=excluded.status,created_at=excluded.created_at,updated_at=CURRENT_TIMESTAMP`);
+  const existing=db.prepare('SELECT 1 FROM predictions WHERE migration_key=?');
+  let inserted=0,updated=0;const errors=[],prepared=[],seen=new Set();
+  records.forEach((raw,index)=>{
     try{
       const key=cleanText(raw.record_id,80),profile=cleanText(raw.profile_id,80);
       const user=findUser.get(profile,profile,profile);
@@ -258,17 +283,22 @@ app.post('/api/admin/predictions/import', requireAdmin, (req,res) => {
       const ids=Array.isArray(raw.match_ids)?raw.match_ids:String(raw.match_ids||'').split(/[;|,]/).map(x=>x.trim()).filter(Boolean);
       const match=ids.find(id=>hasMatch.get(id))||null;
       if(!key||!user||!text||!Number.isInteger(weight)||weight<1||weight>100||confidence===null) throw new Error('主键、用户、内容、权重或置信度无效');
+      if(seen.has(key)) throw new Error('文件中 record_id 重复');
+      seen.add(key);
       const created=raw.created_at&&Number.isFinite(Date.parse(raw.created_at))?new Date(raw.created_at).toISOString():nowIso();
       const change=Number.isFinite(Number(raw.points_change))?Math.round(Number(raw.points_change)):0;
       const total=Number.isFinite(Number(raw.total_points))?Math.round(Number(raw.total_points)):1000;
-      const outcome=insert.run({key,user:user.id,match,text,team:cleanText(raw.supported_team,80)||null,weight,confidence,result,change,total,
+      const values={key,user:user.id,match,text,team:cleanText(raw.supported_team,80)||null,weight,confidence,result,change,total,
         game:cleanText(raw.game,160)||null,score:cleanText(raw.score,40)||null,watched:['true','1','yes','是'].includes(String(raw.watched).toLowerCase())?1:0,
-        status:result==='pending'?'locked':'settled',created});
-      if(outcome.changes) inserted++;else skipped++;
+        status:result==='pending'?'locked':'settled',created};
+      prepared.push(values);
+      if(existing.get(key))updated++;else inserted++;
     }catch(error){errors.push({row:index+2,error:error.message});}
-  }))();
-  audit(req.user.id,'predictions_imported','prediction_import','csv',null,{inserted,skipped,errorCount:errors.length});
-  res.json({inserted,skipped,errors:errors.slice(0,50)});
+  });
+  if(dryRun||errors.length) return res.status(!dryRun&&errors.length?422:200).json({dryRun:true,inserted,updated,deleted:0,errors:errors.slice(0,50)});
+  db.transaction(()=>prepared.forEach(values=>upsert.run(values)))();
+  audit(req.user.id,'predictions_imported','prediction_import','csv',null,{inserted,updated,deleted:0,errorCount:0});
+  res.json({dryRun:false,inserted,updated,deleted:0,errors:[]});
 });
 
 app.post('/api/admin/predictions/:id/settle', requireAdmin, (req,res) => {

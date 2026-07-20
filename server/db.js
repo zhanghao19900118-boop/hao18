@@ -111,6 +111,7 @@ export function migrate() {
   db.prepare(`INSERT OR IGNORE INTO tournaments(id,name,year,status) VALUES('wc2026','2026 FIFA World Cup',2026,'active')`).run();
   db.prepare("UPDATE matches SET tournament_id='wc2026' WHERE tournament_id IS NULL OR tournament_id='' ").run();
   db.prepare("UPDATE users SET user_code=printf('USR-%06d',id) WHERE user_code IS NULL OR user_code='' ").run();
+  db.prepare("UPDATE predictions SET migration_key=printf('WEB-%010d',id) WHERE migration_key IS NULL OR migration_key='' ").run();
   db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_users_code ON users(user_code)');
   db.exec('CREATE INDEX IF NOT EXISTS idx_matches_tournament ON matches(tournament_id,kickoff_at)');
 }
