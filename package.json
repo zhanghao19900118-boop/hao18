@@ -1,6 +1,6 @@
 {
   "name": "dg-world-cup-v3",
-  "version": "3.0.0-rc.1",
+  "version": "3.1.0-rc.1",
   "private": true,
   "description": "2026 DG 世界杯全纪录 V3 — 无现金积分预测与比赛评论",
   "type": "module",

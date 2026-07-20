@@ -13,6 +13,7 @@ export function migrate() {
   db.exec(`
     CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
+      user_code TEXT UNIQUE,
       username TEXT NOT NULL COLLATE NOCASE UNIQUE,
       display_name TEXT NOT NULL,
       password_hash TEXT NOT NULL,
@@ -22,6 +23,13 @@ export function migrate() {
       must_change_password INTEGER NOT NULL DEFAULT 1,
       created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
       updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+    );
+    CREATE TABLE IF NOT EXISTS tournaments (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      year INTEGER NOT NULL,
+      status TEXT NOT NULL DEFAULT 'active' CHECK(status IN ('active','archived')),
+      created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
     );
     CREATE TABLE IF NOT EXISTS sessions (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -33,6 +41,7 @@ export function migrate() {
     );
     CREATE TABLE IF NOT EXISTS matches (
       id TEXT PRIMARY KEY,
+      tournament_id TEXT NOT NULL DEFAULT 'wc2026' REFERENCES tournaments(id),
       stage TEXT NOT NULL,
       match_date TEXT NOT NULL,
       match_time TEXT NOT NULL,
@@ -53,10 +62,13 @@ export function migrate() {
       prediction_text TEXT NOT NULL CHECK(length(prediction_text) BETWEEN 1 AND 50),
       supported_team TEXT,
       weight INTEGER NOT NULL CHECK(weight BETWEEN 1 AND 100),
-      confidence_percent INTEGER CHECK(confidence_percent BETWEEN 0 AND 100),
+      confidence_percent REAL CHECK(confidence_percent BETWEEN 0 AND 100),
       result TEXT NOT NULL DEFAULT 'pending' CHECK(result IN ('correct','incorrect','pending')),
       points_change INTEGER NOT NULL DEFAULT 0,
       total_points INTEGER NOT NULL DEFAULT 1000,
+      source_game TEXT,
+      source_score TEXT,
+      watched INTEGER NOT NULL DEFAULT 0,
       status TEXT NOT NULL DEFAULT 'open' CHECK(status IN ('open','locked','settled')),
       created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
       updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
@@ -85,6 +97,22 @@ export function migrate() {
       created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
     );
   `);
+
+  // Incremental migration for databases created by V3.0.
+  const columns = table => new Set(db.prepare(`PRAGMA table_info(${table})`).all().map(row => row.name));
+  const addColumn = (table, name, definition) => {
+    if (!columns(table).has(name)) db.exec(`ALTER TABLE ${table} ADD COLUMN ${name} ${definition}`);
+  };
+  addColumn('users', 'user_code', 'TEXT');
+  addColumn('matches', 'tournament_id', "TEXT NOT NULL DEFAULT 'wc2026'");
+  addColumn('predictions', 'source_game', 'TEXT');
+  addColumn('predictions', 'source_score', 'TEXT');
+  addColumn('predictions', 'watched', 'INTEGER NOT NULL DEFAULT 0');
+  db.prepare(`INSERT OR IGNORE INTO tournaments(id,name,year,status) VALUES('wc2026','2026 FIFA World Cup',2026,'active')`).run();
+  db.prepare("UPDATE matches SET tournament_id='wc2026' WHERE tournament_id IS NULL OR tournament_id='' ").run();
+  db.prepare("UPDATE users SET user_code=printf('USR-%06d',id) WHERE user_code IS NULL OR user_code='' ").run();
+  db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_users_code ON users(user_code)');
+  db.exec('CREATE INDEX IF NOT EXISTS idx_matches_tournament ON matches(tournament_id,kickoff_at)');
 }
 
 export function audit(actorId, action, targetType, targetId, before = null, after = null, reason = null) {

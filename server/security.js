@@ -10,7 +10,7 @@ export const hashPassword = password => bcrypt.hashSync(password, 12);
 export const verifyPassword = (password, hash) => bcrypt.compareSync(password, hash);
 
 export function publicUser(row) {
-  return row && { id: row.id, username: row.username, displayName: row.display_name, role: row.role, status: row.status, mutedUntil: row.muted_until, mustChangePassword: Boolean(row.must_change_password) };
+  return row && { id: row.id, userCode: row.user_code, username: row.username, displayName: row.display_name, role: row.role, status: row.status, mutedUntil: row.muted_until, mustChangePassword: Boolean(row.must_change_password) };
 }
 
 export function createSession(userId) {

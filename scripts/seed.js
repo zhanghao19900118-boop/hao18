@@ -10,11 +10,11 @@ const matches = read('matches.json');
 const interactions = read('interactions.json');
 const kickoff = m => new Date(`${m.date}T${m.time}:00-04:00`).toISOString();
 
-const putMatch = db.prepare(`INSERT INTO matches(id,stage,match_date,match_time,kickoff_at,home_team,away_team,score,status,venue,source,updated_at)
- VALUES(@id,@group,@date,@time,@kickoff,@home,@away,@score,@status,@venue,@source,CURRENT_TIMESTAMP)
+const putMatch = db.prepare(`INSERT INTO matches(id,tournament_id,stage,match_date,match_time,kickoff_at,home_team,away_team,score,status,venue,source,updated_at)
+ VALUES(@id,@tournament,@group,@date,@time,@kickoff,@home,@away,@score,@status,@venue,@source,CURRENT_TIMESTAMP)
  ON CONFLICT(id) DO UPDATE SET stage=excluded.stage,match_date=excluded.match_date,match_time=excluded.match_time,kickoff_at=excluded.kickoff_at,
- home_team=excluded.home_team,away_team=excluded.away_team,score=excluded.score,status=excluded.status,venue=excluded.venue,source=excluded.source,updated_at=CURRENT_TIMESTAMP`);
-db.transaction(() => matches.forEach(m => putMatch.run({ ...m, kickoff: kickoff(m), source: m.source || null })))();
+ tournament_id=excluded.tournament_id,home_team=excluded.home_team,away_team=excluded.away_team,score=excluded.score,status=excluded.status,venue=excluded.venue,source=excluded.source,updated_at=CURRENT_TIMESTAMP`);
+db.transaction(() => matches.forEach(m => putMatch.run({ ...m, tournament: m.tournament_id || 'wc2026', kickoff: kickoff(m), source: m.source || null })))();
 
 const seedPassword = process.env.SEED_USER_PASSWORD || 'ChangeMe2026';
 const putUser = db.prepare(`INSERT INTO users(username,display_name,password_hash,role,must_change_password)
@@ -26,18 +26,20 @@ if (process.env.ADMIN_USERNAME && process.env.ADMIN_INITIAL_PASSWORD) {
   }
   putUser.run(process.env.ADMIN_USERNAME, process.env.ADMIN_DISPLAY_NAME || '管理员', hashPassword(process.env.ADMIN_INITIAL_PASSWORD), 'admin');
 }
+db.prepare("UPDATE users SET user_code=printf('USR-%06d',id) WHERE user_code IS NULL OR user_code='' ").run();
 
 const users = new Map(db.prepare('SELECT id,display_name FROM users').all().map(u => [u.display_name, u.id]));
-const putPrediction = db.prepare(`INSERT INTO predictions(migration_key,user_id,match_id,prediction_text,supported_team,weight,confidence_percent,result,points_change,total_points,status,created_at,updated_at)
- VALUES(@key,@user,@match,@text,@team,@weight,@confidence,@result,@change,@total,@status,@created,@created)
+const putPrediction = db.prepare(`INSERT INTO predictions(migration_key,user_id,match_id,prediction_text,supported_team,weight,confidence_percent,result,points_change,total_points,source_game,source_score,watched,status,created_at,updated_at)
+ VALUES(@key,@user,@match,@text,@team,@weight,@confidence,@result,@change,@total,@game,@score,@watched,@status,@created,@created)
  ON CONFLICT(migration_key) DO NOTHING`);
 let inserted = 0, skipped = 0;
 db.transaction(() => interactions.forEach(r => {
   const user = users.get(r.profile_id), candidate = r.match_ids?.[0], match = candidate && db.prepare('SELECT 1 FROM matches WHERE id=?').get(candidate) ? candidate : null;
   if (!user) { skipped++; return; }
   const result = putPrediction.run({ key: r.record_id, user, match, text: String(r.prediction || '历史积分预测').slice(0,50), team: r.supported_team || null,
-    weight: Math.max(1, Math.min(100, Math.round(r.weight || 1))), confidence: Math.max(0, Math.min(100, Math.round(r.confidence_percent || 0))),
+    weight: Math.max(1, Math.min(100, Math.round(r.weight || 1))), confidence: Math.max(0, Math.min(100, Math.round(Number(r.confidence_percent || 0) * 100) / 100)),
     result: ['correct','incorrect','pending'].includes(r.result) ? r.result : 'pending', change: Math.round(r.points_change || 0), total: Math.round(r.total_points || 1000),
+    game: r.game || null, score: r.score || null, watched: r.watched ? 1 : 0,
     status: r.result === 'pending' ? 'locked' : 'settled', created: r.created_at ? `${r.created_at}T12:00:00.000Z` : new Date().toISOString() });
   inserted += Number(result.changes || 0);
 }))();

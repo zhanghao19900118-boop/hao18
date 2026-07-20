@@ -11,7 +11,7 @@ const app = express();
 app.set('trust proxy', config.trustProxy);
 app.disable('x-powered-by');
 app.use(helmet({ contentSecurityPolicy: false, crossOriginEmbedderPolicy: false, strictTransportSecurity: config.cookieSecure ? undefined : false }));
-app.use(express.json({ limit: '32kb' }));
+app.use(express.json({ limit: '2mb' }));
 app.use(cookieParser());
 app.use('/api', auth);
 
@@ -20,6 +20,11 @@ const commentLimit = rateLimit({ windowMs: 30_000, limit: 3, keyGenerator: req =
 
 const nowIso = () => new Date().toISOString();
 const cleanText = (value, max) => typeof value === 'string' ? value.trim().slice(0, max) : '';
+const userCode = id => `USR-${String(id).padStart(6,'0')}`;
+const decimalPercent = value => {
+  const number = Number(value);
+  return Number.isFinite(number) && number >= 0 && number <= 100 ? Math.round(number * 100) / 100 : null;
+};
 const matchLocked = row => Date.now() >= new Date(row.kickoff_at).getTime() + 3 * 60 * 60_000;
 const getMatch = id => db.prepare('SELECT * FROM matches WHERE id=?').get(id);
 const predictionSelect = `SELECT p.*,u.display_name,u.username,m.home_team,m.away_team,m.match_date,m.match_time,m.kickoff_at,m.score match_score
@@ -32,7 +37,7 @@ const predictionJson = row => ({
   totalPoints: Math.round(row.total_points), status: row.status, locked: row.match_id ? matchLocked(row) : true, createdAt: row.created_at, updatedAt: row.updated_at
 });
 
-app.get('/api/health', (_req, res) => res.json({ ok: true, version: '3.0.0-rc.1', database: true, time: nowIso() }));
+app.get('/api/health', (_req, res) => res.json({ ok: true, version: '3.1.0-rc.1', database: true, time: nowIso() }));
 
 app.post('/api/auth/login', loginLimit, (req, res) => {
   const username = cleanText(req.body?.username, 60);
@@ -72,9 +77,11 @@ app.use('/api', (req, res, next) => {
 });
 
 app.get('/api/matches', (_req, res) => {
-  const rows = db.prepare('SELECT * FROM matches ORDER BY kickoff_at').all();
-  res.json(rows.map(m => ({ id:m.id, group:m.stage, date:m.match_date, time:m.match_time, home:m.home_team, away:m.away_team, score:m.score, status:m.status, venue:m.venue, kickoffAt:m.kickoff_at, locked:matchLocked(m) })));
+  const rows = db.prepare('SELECT * FROM matches ORDER BY tournament_id,kickoff_at').all();
+  res.json(rows.map(m => ({ id:m.id, tournamentId:m.tournament_id, group:m.stage, date:m.match_date, time:m.match_time, home:m.home_team, away:m.away_team, score:m.score, status:m.status, venue:m.venue, kickoffAt:m.kickoff_at, locked:matchLocked(m) })));
 });
+
+app.get('/api/tournaments', (_req,res) => res.json(db.prepare('SELECT id,name,year,status FROM tournaments ORDER BY year DESC').all()));
 
 app.get('/api/predictions', requireUser, (req, res) => {
   const clauses = [], params = [];
@@ -118,7 +125,10 @@ app.patch('/api/predictions/:id', requireUser, (req, res) => {
   if (!text || text.length > 50 || !Number.isInteger(weight) || weight < 1 || weight > 100) return res.status(400).json({ error: '请检查预测内容和权重' });
   let confidence = row.confidence_percent, result = row.result, points = row.points_change, status = row.status;
   if (admin) {
-    if (req.body.confidencePercent !== undefined) confidence = Math.max(0, Math.min(100, Math.round(Number(req.body.confidencePercent))));
+    if (req.body.confidencePercent !== undefined) {
+      confidence = decimalPercent(req.body.confidencePercent);
+      if (confidence === null) return res.status(400).json({ error:'置信区间必须为0–100，可保留两位小数' });
+    }
     if (['correct','incorrect','pending'].includes(req.body.result)) result = req.body.result;
     if (req.body.pointsChange !== undefined) points = Math.round(Number(req.body.pointsChange));
     if (['open','locked','settled'].includes(req.body.status)) status = req.body.status;
@@ -174,7 +184,7 @@ app.patch('/api/admin/comments/:id', requireAdmin, (req, res) => {
   res.json({ ok:true });
 });
 
-app.get('/api/admin/users', requireAdmin, (_req,res) => res.json(db.prepare('SELECT id,username,display_name,role,status,muted_until,must_change_password,created_at FROM users ORDER BY created_at DESC').all()));
+app.get('/api/admin/users', requireAdmin, (_req,res) => res.json(db.prepare('SELECT id,user_code,username,display_name,role,status,muted_until,must_change_password,created_at FROM users ORDER BY created_at DESC').all()));
 
 app.get('/api/admin/comments', requireAdmin, (req,res) => {
   const clauses=[],params=[];
@@ -190,8 +200,10 @@ app.post('/api/admin/users', requireAdmin, (req,res) => {
   if (!/^[A-Za-z0-9._-]{3,60}$/.test(username) || !display || !validPassword(password)) return res.status(400).json({ error:'用户名、显示名或密码格式不正确' });
   try {
     const info=db.prepare('INSERT INTO users(username,display_name,password_hash,role,must_change_password) VALUES(?,?,?,?,1)').run(username,display,hashPassword(password),role);
-    audit(req.user.id,'user_created','user',info.lastInsertRowid,null,{username,displayName:display,role});
-    res.status(201).json({ id:info.lastInsertRowid,username,displayName:display,role,status:'active',mustChangePassword:true });
+    const code=userCode(info.lastInsertRowid);
+    db.prepare('UPDATE users SET user_code=? WHERE id=?').run(code,info.lastInsertRowid);
+    audit(req.user.id,'user_created','user',info.lastInsertRowid,null,{userCode:code,username,displayName:display,role});
+    res.status(201).json({ id:info.lastInsertRowid,userCode:code,username,displayName:display,role,status:'active',mustChangePassword:true });
   } catch (error) { res.status(409).json({ error:error.code==='SQLITE_CONSTRAINT_UNIQUE'?'用户名已存在':'创建用户失败' }); }
 });
 
@@ -206,7 +218,13 @@ app.patch('/api/admin/users/:id', requireAdmin, (req,res) => {
   }
   const mutedUntil=req.body.mutedUntil===null?null:req.body.mutedUntil?new Date(req.body.mutedUntil).toISOString():user.muted_until;
   const display=cleanText(req.body.displayName,60)||user.display_name;
-  db.prepare('UPDATE users SET display_name=?,role=?,status=?,muted_until=?,updated_at=CURRENT_TIMESTAMP WHERE id=?').run(display,role,status,mutedUntil,user.id);
+  const username=req.body.username===undefined?user.username:cleanText(req.body.username,60);
+  if(!/^[A-Za-z0-9._-]{3,60}$/.test(username)) return res.status(400).json({error:'用户名须为3–60位字母、数字、点、下划线或连字符'});
+  try {
+    db.prepare('UPDATE users SET username=?,display_name=?,role=?,status=?,muted_until=?,updated_at=CURRENT_TIMESTAMP WHERE id=?').run(username,display,role,status,mutedUntil,user.id);
+  } catch(error) {
+    return res.status(409).json({error:error.code==='SQLITE_CONSTRAINT_UNIQUE'?'用户名已存在':'用户更新失败'});
+  }
   if(status==='disabled') db.prepare('DELETE FROM sessions WHERE user_id=?').run(user.id);
   const after=db.prepare('SELECT * FROM users WHERE id=?').get(user.id);
   audit(req.user.id,'user_updated','user',user.id,publicUser(user),publicUser(after),cleanText(req.body.reason,200));
@@ -222,11 +240,42 @@ app.post('/api/admin/users/:id/reset-password', requireAdmin, (req,res) => {
   res.json({ ok:true });
 });
 
+app.post('/api/admin/predictions/import', requireAdmin, (req,res) => {
+  const records=Array.isArray(req.body?.records)?req.body.records:[];
+  if(!records.length||records.length>2000) return res.status(400).json({error:'请上传1–2000条记录'});
+  const findUser=db.prepare(`SELECT * FROM users WHERE user_code=? COLLATE NOCASE OR username=? COLLATE NOCASE OR display_name=? COLLATE NOCASE LIMIT 1`);
+  const hasMatch=db.prepare('SELECT 1 FROM matches WHERE id=?');
+  const insert=db.prepare(`INSERT INTO predictions(migration_key,user_id,match_id,prediction_text,supported_team,weight,confidence_percent,result,points_change,total_points,source_game,source_score,watched,status,created_at,updated_at)
+    VALUES(@key,@user,@match,@text,@team,@weight,@confidence,@result,@change,@total,@game,@score,@watched,@status,@created,@created)
+    ON CONFLICT(migration_key) DO NOTHING`);
+  let inserted=0,skipped=0;const errors=[];
+  db.transaction(()=>records.forEach((raw,index)=>{
+    try{
+      const key=cleanText(raw.record_id,80),profile=cleanText(raw.profile_id,80);
+      const user=findUser.get(profile,profile,profile);
+      const text=cleanText(raw.prediction,50),weight=Number(raw.weight),confidence=decimalPercent(raw.confidence_percent);
+      const result=['correct','incorrect','pending'].includes(raw.result)?raw.result:'pending';
+      const ids=Array.isArray(raw.match_ids)?raw.match_ids:String(raw.match_ids||'').split(/[;|,]/).map(x=>x.trim()).filter(Boolean);
+      const match=ids.find(id=>hasMatch.get(id))||null;
+      if(!key||!user||!text||!Number.isInteger(weight)||weight<1||weight>100||confidence===null) throw new Error('主键、用户、内容、权重或置信度无效');
+      const created=raw.created_at&&Number.isFinite(Date.parse(raw.created_at))?new Date(raw.created_at).toISOString():nowIso();
+      const change=Number.isFinite(Number(raw.points_change))?Math.round(Number(raw.points_change)):0;
+      const total=Number.isFinite(Number(raw.total_points))?Math.round(Number(raw.total_points)):1000;
+      const outcome=insert.run({key,user:user.id,match,text,team:cleanText(raw.supported_team,80)||null,weight,confidence,result,change,total,
+        game:cleanText(raw.game,160)||null,score:cleanText(raw.score,40)||null,watched:['true','1','yes','是'].includes(String(raw.watched).toLowerCase())?1:0,
+        status:result==='pending'?'locked':'settled',created});
+      if(outcome.changes) inserted++;else skipped++;
+    }catch(error){errors.push({row:index+2,error:error.message});}
+  }))();
+  audit(req.user.id,'predictions_imported','prediction_import','csv',null,{inserted,skipped,errorCount:errors.length});
+  res.json({inserted,skipped,errors:errors.slice(0,50)});
+});
+
 app.post('/api/admin/predictions/:id/settle', requireAdmin, (req,res) => {
   const row=db.prepare(`${predictionSelect} WHERE p.id=?`).get(req.params.id);
   if(!row) return res.status(404).json({error:'预测记录不存在'});
-  const confidence=Math.max(0,Math.min(100,Math.round(Number(req.body?.confidencePercent))));
-  if(!Number.isFinite(confidence)) return res.status(400).json({error:'置信区间必须为0–100整数'});
+  const confidence=decimalPercent(req.body?.confidencePercent);
+  if(confidence===null) return res.status(400).json({error:'置信区间必须为0–100，可保留两位小数'});
   const change=Math.round(row.weight*confidence/100-row.weight);
   db.transaction(()=>{
     db.prepare("UPDATE predictions SET confidence_percent=?,points_change=?,result=?,status='settled',updated_at=CURRENT_TIMESTAMP WHERE id=?").run(confidence,change,change>=0?'correct':'incorrect',row.id);

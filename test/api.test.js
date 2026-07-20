@@ -72,12 +72,30 @@ test('only admin can delete comments and static interaction source is not public
   await request(app).get('/data/interactions.json').expect(404);
 });
 
-test('admin can create user and last active admin is protected', async () => {
+test('admin can create user, keep immutable code, rename username, and protect last admin', async () => {
   const login = await admin.post('/api/auth/login').send({username:'admin',password:'AdminPass123'}).expect(200);
   const made = await admin.post('/api/admin/users').set('X-CSRF-Token',login.body.csrfToken).send({username:'new_user',displayName:'新用户',password:'TempPassword123',role:'user'}).expect(201);
   assert.equal(made.body.mustChangePassword,true);
+  assert.match(made.body.userCode,/^USR-\d{6}$/);
+  const renamed=await admin.patch(`/api/admin/users/${made.body.id}`).set('X-CSRF-Token',login.body.csrfToken).send({username:'renamed_user',reason:'测试改名'}).expect(200);
+  assert.equal(renamed.body.username,'renamed_user');
+  assert.equal(renamed.body.userCode,made.body.userCode);
   const adminRow = db.prepare("SELECT id FROM users WHERE username='admin'").get();
   await admin.patch(`/api/admin/users/${adminRow.id}`).set('X-CSRF-Token',login.body.csrfToken).send({status:'disabled',reason:'测试'}).expect(409);
+});
+
+test('admin CSV-style import preserves fields and two-decimal confidence', async () => {
+  const login = await admin.post('/api/auth/login').send({username:'admin',password:'AdminPass123'}).expect(200);
+  const target=db.prepare("SELECT user_code FROM users WHERE username='renamed_user'").get();
+  const result=await admin.post('/api/admin/predictions/import').set('X-CSRF-Token',login.body.csrfToken).send({records:[{
+    record_id:'IMPORT-0001',profile_id:target.user_code,created_at:'2026-06-11',match_ids:'future',game:'Alpha vs Beta',score:'—',
+    prediction:'测试积分预测',supported_team:'Alpha',weight:'20',confidence_percent:'67.25',result:'pending',points_change:'0',total_points:'1000',watched:'true'
+  }]}).expect(200);
+  assert.equal(result.body.inserted,1);
+  const row=db.prepare("SELECT confidence_percent,source_game,watched FROM predictions WHERE migration_key='IMPORT-0001'").get();
+  assert.equal(row.confidence_percent,67.25);
+  assert.equal(row.source_game,'Alpha vs Beta');
+  assert.equal(row.watched,1);
 });
 
 test('migration totals remain exactly 149 and 54', () => {

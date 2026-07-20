@@ -1,0 +1,2 @@
+record_id,profile_id,created_at,match_ids,game,score,prediction,supported_team,weight,confidence_percent,result,points_change,total_points,watched
+SAMPLE-0001,USR-000001,2026-06-11,wc26-1,Mexico vs South Africa,2-0,预测示例内容,Mexico,20,65.25,pending,0,1000,true
